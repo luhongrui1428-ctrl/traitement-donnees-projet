@@ -1,0 +1,111 @@
+1. python3 NB.py training_deduplicate.csv twitter_validation.csv
+
+Accuracy:
+0.643
+Classification Report:
+              precision    recall  f1-score   support
+
+  Irrelevant       0.87      0.23      0.37       172
+    Negative       0.57      0.83      0.68       266
+     Neutral       0.73      0.58      0.65       285
+    Positive       0.63      0.78      0.70       277
+
+    accuracy                           0.64      1000
+   macro avg       0.70      0.61      0.60      1000
+weighted avg       0.69      0.64      0.62      1000
+
+Confusion Matrix:
+[[ 40  59  19  54]
+ [  0 221  17  28]
+ [  3  73 165  44]
+ [  3  33  24 217]]
+
+
+2.python3 NB.py training_deduplicate.csv twitter_validation.csv --alpha 0.5
+ 
+Accuracy:
+0.66
+Classification Report:
+              precision    recall  f1-score   support
+
+  Irrelevant       0.81      0.34      0.48       172
+    Negative       0.59      0.80      0.68       266
+     Neutral       0.73      0.61      0.66       285
+    Positive       0.65      0.77      0.71       277
+
+    accuracy                           0.66      1000
+   macro avg       0.70      0.63      0.63      1000
+weighted avg       0.69      0.66      0.65      1000
+
+Confusion Matrix:
+[[ 59  51  18  44]
+ [  3 214  18  31]
+ [  6  67 173  39]
+ [  5  30  28 214]]
+
+3. python3 NB.py training_deduplicate.csv twitter_validation.csv --alpha 2.0
+
+Accuracy:
+0.601
+Classification Report:
+              precision    recall  f1-score   support
+
+  Irrelevant       0.89      0.10      0.18       172
+    Negative       0.54      0.85      0.66       266
+     Neutral       0.70      0.51      0.59       285
+    Positive       0.59      0.77      0.67       277
+
+    accuracy                           0.60      1000
+   macro avg       0.68      0.56      0.53      1000
+weighted avg       0.66      0.60      0.56      1000
+
+Confusion Matrix:
+[[ 17  68  22  65]
+ [  0 225  15  26]
+ [  0  84 145  56]
+ [  2  37  24 214]]
+
+
+4.python3 NB.py training_deduplicate.csv twitter_validation.csv --class_prior "[0.25,0.25,0.25,0.25]"
+ 
+Accuracy:
+0.655
+Classification Report:
+              precision    recall  f1-score   support
+
+  Irrelevant       0.70      0.42      0.53       172
+    Negative       0.62      0.77      0.69       266
+     Neutral       0.70      0.59      0.64       285
+    Positive       0.64      0.75      0.69       277
+
+    accuracy                           0.66      1000
+   macro avg       0.66      0.63      0.64      1000
+weighted avg       0.66      0.66      0.65      1000
+
+Confusion Matrix:
+[[ 73  38  19  42]
+ [  5 206  24  31]
+ [ 16  59 169  41]
+ [ 11  28  31 207]]
+
+5.  python3 NB.py training_deduplicate.csv twitter_validation.csv --alpha 0.5 --class_prior "[0.25,0.25,0.25,0.25]" 
+
+Accuracy:
+0.673
+Classification Report:
+              precision    recall  f1-score   support
+
+  Irrelevant       0.65      0.54      0.59       172
+    Negative       0.66      0.74      0.70       266
+     Neutral       0.71      0.61      0.66       285
+    Positive       0.66      0.75      0.71       277
+
+    accuracy                           0.67      1000
+   macro avg       0.67      0.66      0.66      1000
+weighted avg       0.67      0.67      0.67      1000
+
+Confusion Matrix:
+[[ 93  27  17  35]
+ [ 11 198  24  33]
+ [ 27  47 174  37]
+ [ 12  26  31 208]]

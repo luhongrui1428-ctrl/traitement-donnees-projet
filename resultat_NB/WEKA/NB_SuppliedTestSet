@@ -1,0 +1,3513 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.FilteredClassifier -F "weka.filters.unsupervised.attribute.StringToWordVector -R first-last -W 1000 -prune-rate -1.0 -N 0 -stemmer weka.core.stemmers.NullStemmer -stopwords-handler weka.core.stopwords.Null -M 1 -tokenizer \"weka.core.tokenizers.WordTokenizer -delimiters \\\" \\\\r\\\\n\\\\t.,;:\\\\\\\'\\\\\\\"()?!\\\"\"" -S 1 -W weka.classifiers.bayes.NaiveBayesMultinomial
+Relation:     training_deduplicate
+Instances:    11642
+Attributes:   2
+              text
+              xClasse
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+FilteredClassifier using weka.classifiers.bayes.NaiveBayesMultinomial  on data filtered through weka.filters.unsupervised.attribute.StringToWordVector -R 1 -W 1000 -prune-rate -1.0 -N 0 -stemmer weka.core.stemmers.NullStemmer -stopwords-handler weka.core.stopwords.Null -M 1 -tokenizer "weka.core.tokenizers.WordTokenizer -delimiters \" \\r\\n\\t.,;:\\\'\\\"()?!\""
+
+Filtered Header
+@relation 'training_deduplicate-weka.filters.unsupervised.attribute.StringToWordVector-R1-W1000-prune-rate-1.0-N0-stemmerweka.core.stemmers.NullStemmer-stopwords-handlerweka.core.stopwords.Null-M1-tokenizerweka.core.tokenizers.WordTokenizer -delimiters \" \\r\\n\\t.,;:\\\'\\\"()?!\"'
+
+@attribute xClasse {Negative,Neutral,Positive,Irrelevant}
+@attribute & numeric
+@attribute - numeric
+@attribute / numeric
+@attribute //t numeric
+@attribute 0 numeric
+@attribute 1 numeric
+@attribute 10 numeric
+@attribute 12 numeric
+@attribute 15 numeric
+@attribute 1Gig numeric
+@attribute 2 numeric
+@attribute 20 numeric
+@attribute 2020 numeric
+@attribute 2077 numeric
+@attribute 21 numeric
+@attribute 24 numeric
+@attribute 2K numeric
+@attribute 2k numeric
+@attribute 3 numeric
+@attribute 30 numeric
+@attribute 3080 numeric
+@attribute 4 numeric
+@attribute 40GB numeric
+@attribute 5 numeric
+@attribute 50 numeric
+@attribute 6 numeric
+@attribute 60 numeric
+@attribute 7 numeric
+@attribute 8 numeric
+@attribute 99 numeric
+@attribute @2KSupport numeric
+@attribute @ATVIAssist numeric
+@attribute @Activision numeric
+@attribute @Beluba numeric
+@attribute @Blizzard_Ent numeric
+@attribute @Borderlands numeric
+@attribute @CSGO numeric
+@attribute @CallofDuty numeric
+@attribute @DOTA2 numeric
+@attribute @EA numeric
+@attribute @EAHelp numeric
+@attribute @EAMaddenNFL numeric
+@attribute @EASPORTS numeric
+@attribute @EASPORTSFIFA numeric
+@attribute @EASPORTS_MUT numeric
+@attribute @FortniteGame numeric
+@attribute @GearboxOfficial numeric
+@attribute @GhostRecon numeric
+@attribute @GhostRecon_UK numeric
+@attribute @Google numeric
+@attribute @HomeDepot numeric
+@attribute @LeagueOfLegends numeric
+@attribute @Microsoft numeric
+@attribute @NBA2K numeric
+@attribute @NBA2K_MyTEAM numeric
+@attribute @NFL numeric
+@attribute @NVIDIAGeForce numeric
+@attribute @PUBG numeric
+@attribute @PUBG_Support numeric
+@attribute @PlayApex numeric
+@attribute @PlayHearthstone numeric
+@attribute @PlayOverwatch numeric
+@attribute @Rainbow6Game numeric
+@attribute @RockstarGames numeric
+@attribute @RockstarSupport numeric
+@attribute @Ronnie2K numeric
+@attribute @Ubisoft numeric
+@attribute @UbisoftSupport numeric
+@attribute @Verizon numeric
+@attribute @VerizonSupport numeric
+@attribute @Warcraft numeric
+@attribute @YouTube numeric
+@attribute @amazon numeric
+@attribute @nvidia numeric
+@attribute @valvesoftware numeric
+@attribute @verizon numeric
+@attribute @verizonfios numeric
+@attribute A numeric
+@attribute AND numeric
+@attribute ARE numeric
+@attribute After numeric
+@attribute All numeric
+@attribute Amazon numeric
+@attribute And numeric
+@attribute Anyone numeric
+@attribute Apex numeric
+@attribute Are numeric
+@attribute At numeric
+@attribute BS numeric
+@attribute Battlefield numeric
+@attribute Been numeric
+@attribute Black numeric
+@attribute Borderlands numeric
+@attribute Breakpoint numeric
+@attribute But numeric
+@attribute CAT8 numeric
+@attribute CSGO numeric
+@attribute Call numeric
+@attribute Can numeric
+@attribute Chinese numeric
+@attribute Cold numeric
+@attribute Creed numeric
+@attribute Cyberpunk numeric
+@attribute DAMN numeric
+@attribute DO numeric
+@attribute DONT numeric
+@attribute Damn numeric
+@attribute Dead numeric
+@attribute Dear numeric
+@attribute Depot numeric
+@attribute Do numeric
+@attribute Don numeric
+@attribute Duty numeric
+@attribute EA numeric
+@attribute Even numeric
+@attribute Every numeric
+@attribute FB numeric
+@attribute FIFA numeric
+@attribute FIX numeric
+@attribute FOR numeric
+@attribute FUCK numeric
+@attribute FUCKING numeric
+@attribute Facebook numeric
+@attribute Fifa numeric
+@attribute Fix numeric
+@attribute For numeric
+@attribute Fortnite numeric
+@attribute Fuck numeric
+@attribute Fucking numeric
+@attribute GAME numeric
+@attribute GET numeric
+@attribute GTA numeric
+@attribute Game numeric
+@attribute Get numeric
+@attribute Ghost numeric
+@attribute God numeric
+@attribute Google numeric
+@attribute HAVE numeric
+@attribute HOW numeric
+@attribute He numeric
+@attribute Hearthstone numeric
+@attribute Hello numeric
+@attribute Here numeric
+@attribute Hey numeric
+@attribute Hi numeric
+@attribute Home numeric
+@attribute How numeric
+@attribute I numeric
+@attribute IN numeric
+@attribute IS numeric
+@attribute IT numeric
+@attribute If numeric
+@attribute Im numeric
+@attribute In numeric
+@attribute India numeric
+@attribute Is numeric
+@attribute It numeric
+@attribute Its numeric
+@attribute It’s numeric
+@attribute I’m numeric
+@attribute I’ve numeric
+@attribute Johnson numeric
+@attribute Just numeric
+@attribute League numeric
+@attribute Legends numeric
+@attribute Like numeric
+@attribute ME numeric
+@attribute MY numeric
+@attribute Madden numeric
+@attribute Man numeric
+@attribute Me numeric
+@attribute Microsoft numeric
+@attribute Mobile numeric
+@attribute More numeric
+@attribute My numeric
+@attribute NBA numeric
+@attribute NFL numeric
+@attribute NO numeric
+@attribute NOT numeric
+@attribute Never numeric
+@attribute New numeric
+@attribute No numeric
+@attribute Not numeric
+@attribute Nothing numeric
+@attribute Now numeric
+@attribute Nvidia numeric
+@attribute OF numeric
+@attribute ON numeric
+@attribute Of numeric
+@attribute Oh numeric
+@attribute On numeric
+@attribute One numeric
+@attribute Ops numeric
+@attribute Or numeric
+@attribute Overwatch numeric
+@attribute PC numeric
+@attribute PS4 numeric
+@attribute PS5 numeric
+@attribute PUBG numeric
+@attribute People numeric
+@attribute Play numeric
+@attribute PlayStation numeric
+@attribute Please numeric
+@attribute Pubg numeric
+@attribute Really numeric
+@attribute Red numeric
+@attribute Redemption numeric
+@attribute S numeric
+@attribute SFTP numeric
+@attribute SHIT numeric
+@attribute STOP numeric
+@attribute Series numeric
+@attribute Shit numeric
+@attribute Smh numeric
+@attribute So numeric
+@attribute Some numeric
+@attribute Sony numeric
+@attribute Still numeric
+@attribute Stop numeric
+@attribute THAT numeric
+@attribute THE numeric
+@attribute THIS numeric
+@attribute TO numeric
+@attribute Test numeric
+@attribute Thank numeric
+@attribute That numeric
+@attribute That’s numeric
+@attribute The numeric
+@attribute There numeric
+@attribute These numeric
+@attribute They numeric
+@attribute This numeric
+@attribute Too numeric
+@attribute Tried numeric
+@attribute Trump numeric
+@attribute Twitter numeric
+@attribute U numeric
+@attribute US numeric
+@attribute Ubisoft numeric
+@attribute V numeric
+@attribute Verizon numeric
+@attribute Very numeric
+@attribute WHAT numeric
+@attribute WHY numeric
+@attribute WTF numeric
+@attribute War numeric
+@attribute Warcraft numeric
+@attribute Warzone numeric
+@attribute We numeric
+@attribute Well numeric
+@attribute What numeric
+@attribute When numeric
+@attribute Who numeric
+@attribute Why numeric
+@attribute Windows numeric
+@attribute World numeric
+@attribute Wow numeric
+@attribute Wtf numeric
+@attribute X numeric
+@attribute Xbox numeric
+@attribute YOU numeric
+@attribute YOUR numeric
+@attribute Yo numeric
+@attribute You numeric
+@attribute Your numeric
+@attribute Y’all numeric
+@attribute a numeric
+@attribute able numeric
+@attribute about numeric
+@attribute absolute numeric
+@attribute absolutely numeric
+@attribute access numeric
+@attribute account numeric
+@attribute accounts numeric
+@attribute actual numeric
+@attribute actually numeric
+@attribute add numeric
+@attribute ads numeric
+@attribute af numeric
+@attribute after numeric
+@attribute again numeric
+@attribute against numeric
+@attribute ago numeric
+@attribute ain’t numeric
+@attribute all numeric
+@attribute almost numeric
+@attribute already numeric
+@attribute also numeric
+@attribute always numeric
+@attribute am numeric
+@attribute amazon numeric
+@attribute amount numeric
+@attribute an numeric
+@attribute and numeric
+@attribute annoying numeric
+@attribute another numeric
+@attribute any numeric
+@attribute anymore numeric
+@attribute anyone numeric
+@attribute anything numeric
+@attribute anywhere numeric
+@attribute app numeric
+@attribute apps numeric
+@attribute are numeric
+@attribute aren numeric
+@attribute aren’t numeric
+@attribute around numeric
+@attribute as numeric
+@attribute ass numeric
+@attribute at numeric
+@attribute audio numeric
+@attribute available numeric
+@attribute away numeric
+@attribute awful numeric
+@attribute baby numeric
+@attribute back numeric
+@attribute bad numeric
+@attribute ball numeric
+@attribute ban numeric
+@attribute banned numeric
+@attribute barely numeric
+@attribute battle numeric
+@attribute battlefield numeric
+@attribute bc numeric
+@attribute be numeric
+@attribute because numeric
+@attribute been numeric
+@attribute before numeric
+@attribute being numeric
+@attribute believe numeric
+@attribute best numeric
+@attribute beta numeric
+@attribute better numeric
+@attribute between numeric
+@attribute big numeric
+@attribute bit numeric
+@attribute bitch numeric
+@attribute black numeric
+@attribute blue numeric
+@attribute borderlands numeric
+@attribute boring numeric
+@attribute both numeric
+@attribute bought numeric
+@attribute break numeric
+@attribute breakpoint numeric
+@attribute bring numeric
+@attribute bro numeric
+@attribute broke numeric
+@attribute broken numeric
+@attribute bs numeric
+@attribute bug numeric
+@attribute bugs numeric
+@attribute bullshit numeric
+@attribute business numeric
+@attribute but numeric
+@attribute buy numeric
+@attribute buying numeric
+@attribute by numeric
+@attribute cables numeric
+@attribute call numeric
+@attribute called numeric
+@attribute calling numeric
+@attribute calls numeric
+@attribute came numeric
+@attribute can numeric
+@attribute cancer numeric
+@attribute cannot numeric
+@attribute cant numeric
+@attribute can’t numeric
+@attribute card numeric
+@attribute cards numeric
+@attribute care numeric
+@attribute cause numeric
+@attribute change numeric
+@attribute changes numeric
+@attribute character numeric
+@attribute characters numeric
+@attribute check numeric
+@attribute close numeric
+@attribute closed numeric
+@attribute code numeric
+@attribute com/watch numeric
+@attribute come numeric
+@attribute comes numeric
+@attribute coming numeric
+@attribute community numeric
+@attribute companies numeric
+@attribute company numeric
+@attribute complete numeric
+@attribute completely numeric
+@attribute connect numeric
+@attribute connection numeric
+@attribute console numeric
+@attribute content numeric
+@attribute control numeric
+@attribute controller numeric
+@attribute could numeric
+@attribute crap numeric
+@attribute crashed numeric
+@attribute crashes numeric
+@attribute crashing numeric
+@attribute crazy numeric
+@attribute credit numeric
+@attribute creed numeric
+@attribute csgo numeric
+@attribute current numeric
+@attribute currently numeric
+@attribute customer numeric
+@attribute customers numeric
+@attribute cuz numeric
+@attribute cyberpunk numeric
+@attribute d numeric
+@attribute damn numeric
+@attribute data numeric
+@attribute date numeric
+@attribute day numeric
+@attribute days numeric
+@attribute dead numeric
+@attribute deal numeric
+@attribute death numeric
+@attribute decided numeric
+@attribute decision numeric
+@attribute delay numeric
+@attribute delayed numeric
+@attribute delete numeric
+@attribute deleted numeric
+@attribute depot numeric
+@attribute did numeric
+@attribute didn numeric
+@attribute didn’t numeric
+@attribute die numeric
+@attribute different numeric
+@attribute difficult numeric
+@attribute disappointed numeric
+@attribute disappointing numeric
+@attribute disconnected numeric
+@attribute disgusting numeric
+@attribute do numeric
+@attribute does numeric
+@attribute doesn numeric
+@attribute doesn’t numeric
+@attribute dog numeric
+@attribute doing numeric
+@attribute don numeric
+@attribute done numeric
+@attribute dont numeric
+@attribute don’t numeric
+@attribute dota numeric
+@attribute down numeric
+@attribute drop numeric
+@attribute dropped numeric
+@attribute dropping numeric
+@attribute drops numeric
+@attribute dudes numeric
+@attribute due numeric
+@attribute dumb numeric
+@attribute during numeric
+@attribute duty numeric
+@attribute each numeric
+@attribute early numeric
+@attribute either numeric
+@attribute else numeric
+@attribute email numeric
+@attribute employees numeric
+@attribute end numeric
+@attribute enough numeric
+@attribute entire numeric
+@attribute error numeric
+@attribute even numeric
+@attribute ever numeric
+@attribute every numeric
+@attribute everyone numeric
+@attribute everything numeric
+@attribute everytime numeric
+@attribute exist numeric
+@attribute expensive numeric
+@attribute experience numeric
+@attribute explain numeric
+@attribute face numeric
+@attribute facebook numeric
+@attribute fact numeric
+@attribute fail numeric
+@attribute fake numeric
+@attribute fans numeric
+@attribute far numeric
+@attribute fast numeric
+@attribute feel numeric
+@attribute feels numeric
+@attribute few numeric
+@attribute fifa numeric
+@attribute finally numeric
+@attribute find numeric
+@attribute fine numeric
+@attribute finished numeric
+@attribute first numeric
+@attribute fix numeric
+@attribute fixed numeric
+@attribute folks numeric
+@attribute for numeric
+@attribute forgot numeric
+@attribute fortnite numeric
+@attribute found numeric
+@attribute franchise numeric
+@attribute free numeric
+@attribute friend numeric
+@attribute friends numeric
+@attribute from numeric
+@attribute frustrating numeric
+@attribute fuck numeric
+@attribute fucked numeric
+@attribute fuckin numeric
+@attribute fucking numeric
+@attribute full numeric
+@attribute fun numeric
+@attribute game numeric
+@attribute gameplay numeric
+@attribute games numeric
+@attribute gaming numeric
+@attribute garbage numeric
+@attribute gen numeric
+@attribute get numeric
+@attribute gets numeric
+@attribute getting numeric
+@attribute give numeric
+@attribute given numeric
+@attribute giving numeric
+@attribute glitch numeric
+@attribute glitches numeric
+@attribute go numeric
+@attribute god numeric
+@attribute goes numeric
+@attribute going numeric
+@attribute gold numeric
+@attribute gone numeric
+@attribute gonna numeric
+@attribute good numeric
+@attribute google numeric
+@attribute got numeric
+@attribute gotta numeric
+@attribute graphics numeric
+@attribute great numeric
+@attribute gta numeric
+@attribute guess numeric
+@attribute guy numeric
+@attribute guys numeric
+@attribute hacked numeric
+@attribute hackers numeric
+@attribute had numeric
+@attribute half numeric
+@attribute happen numeric
+@attribute happened numeric
+@attribute happening numeric
+@attribute happens numeric
+@attribute happy numeric
+@attribute hard numeric
+@attribute has numeric
+@attribute hate numeric
+@attribute have numeric
+@attribute haven numeric
+@attribute haven’t numeric
+@attribute having numeric
+@attribute he numeric
+@attribute hear numeric
+@attribute hearthstone numeric
+@attribute hell numeric
+@attribute help numeric
+@attribute her numeric
+@attribute here numeric
+@attribute hero numeric
+@attribute hey numeric
+@attribute high numeric
+@attribute him numeric
+@attribute his numeric
+@attribute history numeric
+@attribute hit numeric
+@attribute hold numeric
+@attribute home numeric
+@attribute honestly numeric
+@attribute hope numeric
+@attribute hour numeric
+@attribute hours numeric
+@attribute house numeric
+@attribute how numeric
+@attribute https numeric
+@attribute huge numeric
+@attribute i numeric
+@attribute idea numeric
+@attribute if numeric
+@attribute im numeric
+@attribute in numeric
+@attribute including numeric
+@attribute instead numeric
+@attribute internet numeric
+@attribute into numeric
+@attribute is numeric
+@attribute isn numeric
+@attribute isn’t numeric
+@attribute issue numeric
+@attribute issues numeric
+@attribute it numeric
+@attribute its numeric
+@attribute it’s numeric
+@attribute job numeric
+@attribute johnson numeric
+@attribute joke numeric
+@attribute just numeric
+@attribute keep numeric
+@attribute keeps numeric
+@attribute kicked numeric
+@attribute kill numeric
+@attribute killed numeric
+@attribute killing numeric
+@attribute kind numeric
+@attribute kinda numeric
+@attribute know numeric
+@attribute lag numeric
+@attribute lagging numeric
+@attribute last numeric
+@attribute late numeric
+@attribute launch numeric
+@attribute league numeric
+@attribute least numeric
+@attribute leave numeric
+@attribute left numeric
+@attribute legends numeric
+@attribute less numeric
+@attribute let numeric
+@attribute letting numeric
+@attribute level numeric
+@attribute life numeric
+@attribute like numeric
+@attribute line numeric
+@attribute lines numeric
+@attribute list numeric
+@attribute literally numeric
+@attribute little numeric
+@attribute live numeric
+@attribute ll numeric
+@attribute lmao numeric
+@attribute load numeric
+@attribute loading numeric
+@attribute lobby numeric
+@attribute log numeric
+@attribute login numeric
+@attribute lol numeric
+@attribute long numeric
+@attribute longer numeric
+@attribute look numeric
+@attribute looking numeric
+@attribute looks numeric
+@attribute lose numeric
+@attribute losing numeric
+@attribute lost numeric
+@attribute lot numeric
+@attribute love numeric
+@attribute low numeric
+@attribute m numeric
+@attribute mad numeric
+@attribute madden numeric
+@attribute made numeric
+@attribute main numeric
+@attribute major numeric
+@attribute make numeric
+@attribute makes numeric
+@attribute making numeric
+@attribute man numeric
+@attribute many numeric
+@attribute map numeric
+@attribute market numeric
+@attribute mask numeric
+@attribute massive numeric
+@attribute match numeric
+@attribute matches numeric
+@attribute matchmaking numeric
+@attribute me numeric
+@attribute mean numeric
+@attribute means numeric
+@attribute men numeric
+@attribute mess numeric
+@attribute microsoft numeric
+@attribute middle numeric
+@attribute might numeric
+@attribute million numeric
+@attribute mind numeric
+@attribute minutes numeric
+@attribute miss numeric
+@attribute missing numeric
+@attribute mobile numeric
+@attribute mode numeric
+@attribute money numeric
+@attribute month numeric
+@attribute months numeric
+@attribute more numeric
+@attribute morning numeric
+@attribute most numeric
+@attribute move numeric
+@attribute much numeric
+@attribute multiple numeric
+@attribute must numeric
+@attribute my numeric
+@attribute name numeric
+@attribute need numeric
+@attribute needs numeric
+@attribute never numeric
+@attribute new numeric
+@attribute news numeric
+@attribute next numeric
+@attribute nice numeric
+@attribute night numeric
+@attribute no numeric
+@attribute not numeric
+@attribute nothing numeric
+@attribute now numeric
+@attribute number numeric
+@attribute nvidia numeric
+@attribute of numeric
+@attribute off numeric
+@attribute oh numeric
+@attribute old numeric
+@attribute on numeric
+@attribute once numeric
+@attribute one numeric
+@attribute online numeric
+@attribute only numeric
+@attribute open numeric
+@attribute ops numeric
+@attribute option numeric
+@attribute or numeric
+@attribute order numeric
+@attribute ordered numeric
+@attribute other numeric
+@attribute our numeric
+@attribute out numeric
+@attribute over numeric
+@attribute overwatch numeric
+@attribute own numeric
+@attribute packs numeric
+@attribute page numeric
+@attribute paid numeric
+@attribute part numeric
+@attribute pass numeric
+@attribute past numeric
+@attribute patch numeric
+@attribute pay numeric
+@attribute paying numeric
+@attribute pc numeric
+@attribute people numeric
+@attribute performed numeric
+@attribute person numeric
+@attribute phone numeric
+@attribute pic numeric
+@attribute pick numeric
+@attribute place numeric
+@attribute plan numeric
+@attribute platform numeric
+@attribute play numeric
+@attribute played numeric
+@attribute player numeric
+@attribute players numeric
+@attribute playing numeric
+@attribute playstation numeric
+@attribute please numeric
+@attribute pls numeric
+@attribute plz numeric
+@attribute point numeric
+@attribute points numeric
+@attribute powder numeric
+@attribute pretty numeric
+@attribute price numeric
+@attribute prime numeric
+@attribute pro numeric
+@attribute probably numeric
+@attribute problem numeric
+@attribute problems numeric
+@attribute products numeric
+@attribute ps4 numeric
+@attribute ps5 numeric
+@attribute pubg numeric
+@attribute purchase numeric
+@attribute put numeric
+@attribute putting numeric
+@attribute quit numeric
+@attribute racist numeric
+@attribute rank numeric
+@attribute ranked numeric
+@attribute rather numeric
+@attribute ratings numeric
+@attribute re numeric
+@attribute read numeric
+@attribute ready numeric
+@attribute real numeric
+@attribute really numeric
+@attribute reason numeric
+@attribute received numeric
+@attribute red numeric
+@attribute redemption numeric
+@attribute refund numeric
+@attribute release numeric
+@attribute released numeric
+@attribute remember numeric
+@attribute remove numeric
+@attribute removed numeric
+@attribute report numeric
+@attribute reset numeric
+@attribute response numeric
+@attribute rewards numeric
+@attribute ridiculous numeric
+@attribute right numeric
+@attribute rn numeric
+@attribute row numeric
+@attribute ruining numeric
+@attribute run numeric
+@attribute running numeric
+@attribute s numeric
+@attribute sad numeric
+@attribute said numeric
+@attribute same numeric
+@attribute saw numeric
+@attribute say numeric
+@attribute saying numeric
+@attribute says numeric
+@attribute screen numeric
+@attribute screwed numeric
+@attribute season numeric
+@attribute second numeric
+@attribute see numeric
+@attribute seeing numeric
+@attribute seem numeric
+@attribute seems numeric
+@attribute seen numeric
+@attribute sell numeric
+@attribute selling numeric
+@attribute sense numeric
+@attribute sent numeric
+@attribute series numeric
+@attribute seriously numeric
+@attribute server numeric
+@attribute servers numeric
+@attribute service numeric
+@attribute services numeric
+@attribute set numeric
+@attribute shit numeric
+@attribute shitty numeric
+@attribute shooting numeric
+@attribute shot numeric
+@attribute should numeric
+@attribute show numeric
+@attribute shows numeric
+@attribute shut numeric
+@attribute sick numeric
+@attribute side numeric
+@attribute since numeric
+@attribute single numeric
+@attribute site numeric
+@attribute skin numeric
+@attribute skins numeric
+@attribute slow numeric
+@attribute small numeric
+@attribute smh numeric
+@attribute so numeric
+@attribute social numeric
+@attribute sold numeric
+@attribute some numeric
+@attribute someone numeric
+@attribute something numeric
+@attribute sometimes numeric
+@attribute soon numeric
+@attribute sorry numeric
+@attribute sort numeric
+@attribute sound numeric
+@attribute sounds numeric
+@attribute speed numeric
+@attribute speedtest numeric
+@attribute spend numeric
+@attribute spent numeric
+@attribute start numeric
+@attribute started numeric
+@attribute starting numeric
+@attribute stay numeric
+@attribute still numeric
+@attribute stock numeric
+@attribute stop numeric
+@attribute stopped numeric
+@attribute store numeric
+@attribute stores numeric
+@attribute story numeric
+@attribute straight numeric
+@attribute stuck numeric
+@attribute stuff numeric
+@attribute stupid numeric
+@attribute such numeric
+@attribute suck numeric
+@attribute sucks numeric
+@attribute suddenly numeric
+@attribute super numeric
+@attribute support numeric
+@attribute supposed numeric
+@attribute sure numeric
+@attribute swear numeric
+@attribute switch numeric
+@attribute symmetric numeric
+@attribute system numeric
+@attribute t numeric
+@attribute take numeric
+@attribute takes numeric
+@attribute taking numeric
+@attribute talk numeric
+@attribute talking numeric
+@attribute team numeric
+@attribute tell numeric
+@attribute terrible numeric
+@attribute tf numeric
+@attribute than numeric
+@attribute thanks numeric
+@attribute that numeric
+@attribute that’s numeric
+@attribute the numeric
+@attribute their numeric
+@attribute them numeric
+@attribute then numeric
+@attribute there numeric
+@attribute these numeric
+@attribute they numeric
+@attribute they’re numeric
+@attribute thing numeric
+@attribute things numeric
+@attribute think numeric
+@attribute thinking numeric
+@attribute this numeric
+@attribute tho numeric
+@attribute those numeric
+@attribute though numeric
+@attribute thought numeric
+@attribute three numeric
+@attribute through numeric
+@attribute till numeric
+@attribute time numeric
+@attribute times numeric
+@attribute tired numeric
+@attribute to numeric
+@attribute today numeric
+@attribute together numeric
+@attribute told numeric
+@attribute tonight numeric
+@attribute too numeric
+@attribute took numeric
+@attribute top numeric
+@attribute toxic numeric
+@attribute trash numeric
+@attribute trial numeric
+@attribute tried numeric
+@attribute true numeric
+@attribute trust numeric
+@attribute try numeric
+@attribute trying numeric
+@attribute turn numeric
+@attribute tweet numeric
+@attribute twice numeric
+@attribute twitch numeric
+@attribute twitter numeric
+@attribute two numeric
+@attribute u numeric
+@attribute unable numeric
+@attribute understand numeric
+@attribute unplayable numeric
+@attribute until numeric
+@attribute up numeric
+@attribute update numeric
+@attribute updates numeric
+@attribute upset numeric
+@attribute ur numeric
+@attribute us numeric
+@attribute use numeric
+@attribute used numeric
+@attribute using numeric
+@attribute v numeric
+@attribute vaccine numeric
+@attribute ve numeric
+@attribute verizon numeric
+@attribute version numeric
+@attribute very numeric
+@attribute via numeric
+@attribute video numeric
+@attribute w numeric
+@attribute wait numeric
+@attribute waiting numeric
+@attribute wanna numeric
+@attribute want numeric
+@attribute wanted numeric
+@attribute wants numeric
+@attribute war numeric
+@attribute was numeric
+@attribute waste numeric
+@attribute watch numeric
+@attribute watching numeric
+@attribute way numeric
+@attribute we numeric
+@attribute week numeric
+@attribute weeks numeric
+@attribute well numeric
+@attribute went numeric
+@attribute were numeric
+@attribute what numeric
+@attribute whatever numeric
+@attribute what’s numeric
+@attribute when numeric
+@attribute where numeric
+@attribute which numeric
+@attribute while numeric
+@attribute white numeric
+@attribute who numeric
+@attribute whole numeric
+@attribute why numeric
+@attribute will numeric
+@attribute win numeric
+@attribute wired numeric
+@attribute wit numeric
+@attribute with numeric
+@attribute without numeric
+@attribute won numeric
+@attribute wondering numeric
+@attribute wont numeric
+@attribute won’t numeric
+@attribute work numeric
+@attribute worked numeric
+@attribute working numeric
+@attribute works numeric
+@attribute world numeric
+@attribute worse numeric
+@attribute worst numeric
+@attribute worth numeric
+@attribute would numeric
+@attribute wrong numeric
+@attribute wtf numeric
+@attribute xbox numeric
+@attribute y numeric
+@attribute ya numeric
+@attribute yall numeric
+@attribute year numeric
+@attribute years numeric
+@attribute yesterday numeric
+@attribute yet numeric
+@attribute yo numeric
+@attribute you numeric
+@attribute your numeric
+@attribute youtu numeric
+@attribute youtube numeric
+@attribute you’re numeric
+@attribute y’all numeric
+@attribute ” numeric
+@attribute $100 numeric
+@attribute $JNJ numeric
+@attribute + numeric
+@attribute 00 numeric
+@attribute 000 numeric
+@attribute 100 numeric
+@attribute '100\%' numeric
+@attribute 2019 numeric
+@attribute 24Hr numeric
+@attribute 5G numeric
+@attribute 9 numeric
+@attribute < numeric
+@attribute > numeric
+@attribute @CyberpunkGame numeric
+@attribute @PlayStation numeric
+@attribute AI numeric
+@attribute AMD numeric
+@attribute AT&T numeric
+@attribute About numeric
+@attribute Achievement numeric
+@attribute Also numeric
+@attribute Amazing numeric
+@attribute American numeric
+@attribute An numeric
+@attribute App numeric
+@attribute Apple numeric
+@attribute As numeric
+@attribute Auto numeric
+@attribute BEST numeric
+@attribute Baby numeric
+@attribute Be numeric
+@attribute Best numeric
+@attribute Big numeric
+@attribute Business numeric
+@attribute Buy numeric
+@attribute By numeric
+@attribute COVID-19 numeric
+@attribute CS numeric
+@attribute Canada numeric
+@attribute Check numeric
+@attribute China numeric
+@attribute Click numeric
+@attribute Come numeric
+@attribute Congratulations numeric
+@attribute Cool numeric
+@attribute Core numeric
+@attribute Covid-19 numeric
+@attribute D numeric
+@attribute Daily numeric
+@attribute Data numeric
+@attribute Day numeric
+@attribute Deals numeric
+@attribute Delayed numeric
+@attribute Dota numeric
+@attribute Edge numeric
+@attribute Edition numeric
+@attribute Enjoy numeric
+@attribute Epic numeric
+@attribute Esports numeric
+@attribute FREE numeric
+@attribute Finally numeric
+@attribute First numeric
+@attribute Follow numeric
+@attribute From numeric
+@attribute GO numeric
+@attribute GPU numeric
+@attribute GS numeric
+@attribute GTX numeric
+@attribute Games numeric
+@attribute Gaming numeric
+@attribute GeForce numeric
+@attribute Global numeric
+@attribute Go numeric
+@attribute Going numeric
+@attribute Gold numeric
+@attribute Golden numeric
+@attribute Good numeric
+@attribute Got numeric
+@attribute Grand numeric
+@attribute Great numeric
+@attribute Group numeric
+@attribute Hakusho numeric
+@attribute Happy numeric
+@attribute Has numeric
+@attribute Have numeric
+@attribute Hope numeric
+@attribute III numeric
+@attribute IM numeric
+@attribute Inc numeric
+@attribute Instagram numeric
+@attribute Intel numeric
+@attribute I’ll numeric
+@attribute Johnson’s numeric
+@attribute Join numeric
+@attribute Kamuy numeric
+@attribute Keep numeric
+@attribute L numeric
+@attribute LIVE numeric
+@attribute Let numeric
+@attribute Live numeric
+@attribute LoL numeric
+@attribute Love numeric
+@attribute Major numeric
+@attribute Make numeric
+@attribute Makes numeric
+@attribute Market numeric
+@attribute May numeric
+@attribute Modern numeric
+@attribute Monday numeric
+@attribute NOW numeric
+@attribute NVIDIA numeric
+@attribute News numeric
+@attribute Nice numeric
+@attribute Nvidia’s numeric
+@attribute ONE numeric
+@attribute Online numeric
+@attribute Only numeric
+@attribute Our numeric
+@attribute Out numeric
+@attribute Over numeric
+@attribute Pay numeric
+@attribute Playing numeric
+@attribute Powder numeric
+@attribute Price numeric
+@attribute Prime numeric
+@attribute Pro numeric
+@attribute Punch numeric
+@attribute RT numeric
+@attribute RTX numeric
+@attribute Ranked numeric
+@attribute Read numeric
+@attribute Recon numeric
+@attribute Retweet numeric
+@attribute Sale numeric
+@attribute Saturday numeric
+@attribute Season numeric
+@attribute See numeric
+@attribute Selling numeric
+@attribute Sorry numeric
+@attribute Stock numeric
+@attribute Store numeric
+@attribute Stream numeric
+@attribute Summoners numeric
+@attribute Surface numeric
+@attribute TV numeric
+@attribute Teams numeric
+@attribute Thanks numeric
+@attribute Theft numeric
+@attribute Then numeric
+@attribute TikTok numeric
+@attribute Time numeric
+@attribute To numeric
+@attribute Today numeric
+@attribute Top numeric
+@attribute Try numeric
+@attribute Trying numeric
+@attribute Twitch numeric
+@attribute UK numeric
+@attribute Unit numeric
+@attribute Us numeric
+@attribute Valve numeric
+@attribute Video numeric
+@attribute Vision numeric
+@attribute Warfare numeric
+@attribute Was numeric
+@attribute Watch numeric
+@attribute Will numeric
+@attribute With numeric
+@attribute WoW numeric
+@attribute Won numeric
+@attribute YouTube numeric
+@attribute Yu numeric
+@attribute [ numeric
+@attribute action numeric
+@attribute alone numeric
+@attribute amazing numeric
+@attribute amzn numeric
+@attribute announce numeric
+@attribute appreciated numeric
+@attribute awesome numeric
+@attribute beautiful numeric
+@attribute become numeric
+@attribute below numeric
+@attribute biggest numeric
+@attribute birdeye numeric
+@attribute birthday numeric
+@attribute book numeric
+@attribute bots numeric
+@attribute buff numeric
+@attribute car numeric
+@attribute caused numeric
+@attribute chance numeric
+@attribute chat numeric
+@attribute claims numeric
+@attribute class numeric
+@attribute co numeric
+@attribute com numeric
+@attribute com/ numeric
+@attribute com/johnson-johnso… numeric
+@attribute comments numeric
+@attribute cool numeric
+@attribute coronavirus numeric
+@attribute create numeric
+@attribute cute numeric
+@attribute damage numeric
+@attribute deals numeric
+@attribute definitely numeric
+@attribute died numeric
+@attribute dlvr numeric
+@attribute download numeric
+@attribute drive numeric
+@attribute dude numeric
+@attribute earned numeric
+@attribute easy numeric
+@attribute enjoy numeric
+@attribute entering numeric
+@attribute epic numeric
+@attribute event numeric
+@attribute everyday numeric
+@attribute excited numeric
+@attribute exciting numeric
+@attribute family numeric
+@attribute fan numeric
+@attribute favorite numeric
+@attribute features numeric
+@attribute felt numeric
+@attribute food numeric
+@attribute forever numeric
+@attribute forward numeric
+@attribute funny numeric
+@attribute gave numeric
+@attribute gift numeric
+@attribute girl numeric
+@attribute gotten numeric
+@attribute grind numeric
+@attribute group numeric
+@attribute hair numeric
+@attribute hands numeric
+@attribute hang numeric
+@attribute heard numeric
+@attribute helping numeric
+@attribute ift numeric
+@attribute illness numeric
+@attribute impressed numeric
+@attribute incredible numeric
+@attribute instagram numeric
+@attribute interesting numeric
+@attribute item numeric
+@attribute join numeric
+@attribute kills numeric
+@attribute laptop numeric
+@attribute later numeric
+@attribute latest numeric
+@attribute lawsuit numeric
+@attribute lawsuits numeric
+@attribute leaked numeric
+@attribute learn numeric
+@attribute learning numeric
+@attribute link numeric
+@attribute loot numeric
+@attribute loved numeric
+@attribute luck numeric
+@attribute matter numeric
+@attribute may numeric
+@attribute maybe numeric
+@attribute mixer numeric
+@attribute mom numeric
+@attribute moment numeric
+@attribute music numeric
+@attribute myself numeric
+@attribute n numeric
+@attribute offer numeric
+@attribute opportunity numeric
+@attribute others numeric
+@attribute paper numeric
+@attribute participant numeric
+@attribute paused numeric
+@attribute perfect numeric
+@attribute performance numeric
+@attribute piece numeric
+@attribute pissed numeric
+@attribute popular numeric
+@attribute post numeric
+@attribute posted numeric
+@attribute power numeric
+@attribute powerful numeric
+@attribute proud numeric
+@attribute quality numeric
+@attribute quiz numeric
+@attribute reading numeric
+@attribute redd numeric
+@attribute review numeric
+@attribute round numeric
+@attribute runs numeric
+@attribute sale numeric
+@attribute save numeric
+@attribute search numeric
+@attribute share numeric
+@attribute she numeric
+@attribute showing numeric
+@attribute starts numeric
+@attribute stream numeric
+@attribute streaming numeric
+@attribute strong numeric
+@attribute study numeric
+@attribute talc numeric
+@attribute talc-based numeric
+@attribute tech numeric
+@attribute thank numeric
+@attribute theguardian numeric
+@attribute theverge numeric
+@attribute thousands numeric
+@attribute tomorrow numeric
+@attribute trailer numeric
+@attribute under numeric
+@attribute unexplained numeric
+@attribute users numeric
+@attribute videos numeric
+@attribute vs numeric
+@attribute wall numeric
+@attribute weekend numeric
+@attribute weird numeric
+@attribute women numeric
+@attribute wonderful numeric
+@attribute wow numeric
+@attribute x numeric
+@attribute | numeric
+@attribute – numeric
+@attribute — numeric
+@attribute • numeric
+@attribute … numeric
+@attribute 14 numeric
+@attribute 19 numeric
+@attribute 25 numeric
+@attribute 4th numeric
+@attribute @assassinscreed numeric
+@attribute AC numeric
+@attribute Absolutely numeric
+@attribute Always numeric
+@attribute Another numeric
+@attribute April numeric
+@attribute Assassin numeric
+@attribute Assassins numeric
+@attribute Assassin’s numeric
+@attribute Awesome numeric
+@attribute Back numeric
+@attribute COD numeric
+@attribute Can’t numeric
+@attribute City numeric
+@attribute Congrats numeric
+@attribute DLC numeric
+@attribute Excited numeric
+@attribute FPS numeric
+@attribute Feels numeric
+@attribute Final numeric
+@attribute GOOD numeric
+@attribute Gameplay numeric
+@attribute Glad numeric
+@attribute Had numeric
+@attribute Help numeric
+@attribute Holy numeric
+@attribute Honestly numeric
+@attribute Huge numeric
+@attribute Idle-Empire numeric
+@attribute Interesting numeric
+@attribute I’d numeric
+@attribute LOT numeric
+@attribute LOVE numeric
+@attribute Last numeric
+@attribute Legend numeric
+@attribute Legendary numeric
+@attribute Looking numeric
+@attribute Looks numeric
+@attribute Loving numeric
+@attribute November numeric
+@attribute OMG numeric
+@attribute Odyssey numeric
+@attribute Ok numeric
+@attribute Origins numeric
+@attribute Perfect numeric
+@attribute Pretty numeric
+@attribute Rogue numeric
+@attribute SO numeric
+@attribute Seeing numeric
+@attribute Siege numeric
+@attribute Such numeric
+@attribute Super numeric
+@attribute Switch numeric
+@attribute TrueAchievement numeric
+@attribute Valhalla numeric
+@attribute WOW numeric
+@attribute Watching numeric
+@attribute achievements numeric
+@attribute addicted numeric
+@attribute along numeric
+@attribute announcement numeric
+@attribute apex numeric
+@attribute appreciate numeric
+@attribute art numeric
+@attribute assassin numeric
+@attribute assassins numeric
+@attribute badly numeric
+@attribute based numeric
+@attribute beat numeric
+@attribute bored numeric
+@attribute boy numeric
+@attribute boys numeric
+@attribute campaign numeric
+@attribute chill numeric
+@attribute clear numeric
+@attribute cold numeric
+@attribute competitive numeric
+@attribute consoles numeric
+@attribute continue numeric
+@attribute copy numeric
+@attribute couple numeric
+@attribute created numeric
+@attribute cry numeric
+@attribute deck numeric
+@attribute design numeric
+@attribute digital numeric
+@attribute dope numeric
+@attribute dying numeric
+@attribute edition numeric
+@attribute ending numeric
+@attribute enjoyable numeric
+@attribute enjoyed numeric
+@attribute enjoying numeric
+@attribute especially numeric
+@attribute excellent numeric
+@attribute expansion numeric
+@attribute expect numeric
+@attribute fantastic numeric
+@attribute fav numeric
+@attribute fave numeric
+@attribute favourite numeric
+@attribute feature numeric
+@attribute feeling numeric
+@attribute finish numeric
+@attribute follow numeric
+@attribute forget numeric
+@attribute future numeric
+@attribute gamers numeric
+@attribute giveaway numeric
+@attribute glad numeric
+@attribute grateful numeric
+@attribute greatest numeric
+@attribute hanging numeric
+@attribute heart numeric
+@attribute helped numeric
+@attribute hot numeric
+@attribute hype numeric
+@attribute hyped numeric
+@attribute impressive numeric
+@attribute insane numeric
+@attribute i’m numeric
+@attribute jump numeric
+@attribute kids numeric
+@attribute lie numeric
+@attribute listening numeric
+@attribute lit numeric
+@attribute lovely numeric
+@attribute loving numeric
+@attribute maps numeric
+@attribute masterpiece numeric
+@attribute memories numeric
+@attribute meta numeric
+@attribute moments numeric
+@attribute movie numeric
+@attribute ok numeric
+@attribute omg numeric
+@attribute opinion numeric
+@attribute original numeric
+@attribute outside numeric
+@attribute paint numeric
+@attribute plays numeric
+@attribute plus numeric
+@attribute pts numeric
+@attribute quarantine numeric
+@attribute quite numeric
+@attribute raid numeric
+@attribute recently numeric
+@attribute recommend numeric
+@attribute rest numeric
+@attribute reveal numeric
+@attribute safe numeric
+@attribute setting numeric
+@attribute short numeric
+@attribute smart numeric
+@attribute song numeric
+@attribute sooo numeric
+@attribute soundtrack numeric
+@attribute squad numeric
+@attribute stories numeric
+@attribute style numeric
+@attribute surprise numeric
+@attribute sweet numeric
+@attribute taken numeric
+@attribute technology numeric
+@attribute ton numeric
+@attribute trueachievements numeric
+@attribute truly numeric
+@attribute unban numeric
+@attribute upgrade numeric
+@attribute w/ numeric
+@attribute warcraft numeric
+@attribute watched numeric
+@attribute water numeric
+@attribute willing numeric
+@attribute wins numeric
+@attribute wish numeric
+@attribute wn numeric
+@attribute yeah numeric
+@attribute 18 numeric
+@attribute 2-1 numeric
+@attribute 2nd numeric
+@attribute 3rd numeric
+@attribute @ numeric
+@attribute @BlazedRTs numeric
+@attribute @PUBGMOBILE numeric
+@attribute @Twitch numeric
+@attribute @Xbox numeric
+@attribute Americans numeric
+@attribute Ban numeric
+@attribute Bro numeric
+@attribute DETAILS numeric
+@attribute Did numeric
+@attribute Ever numeric
+@attribute Everyone numeric
+@attribute Free numeric
+@attribute Funny numeric
+@attribute Girl numeric
+@attribute Halo numeric
+@attribute Hell numeric
+@attribute Lol numeric
+@attribute Look numeric
+@attribute Messi numeric
+@attribute Mixer numeric
+@attribute Modi numeric
+@attribute Moments numeric
+@attribute Most numeric
+@attribute Much numeric
+@attribute Music numeric
+@attribute NONE numeric
+@attribute Netflix numeric
+@attribute Next numeric
+@attribute Nigeria numeric
+@attribute OG numeric
+@attribute SEE numeric
+@attribute She numeric
+@attribute Shoutout numeric
+@attribute Someone numeric
+@attribute T numeric
+@attribute Team numeric
+@attribute Tell numeric
+@attribute Up numeric
+@attribute W numeric
+@attribute WE numeric
+@attribute Welcome numeric
+@attribute Yes numeric
+@attribute above numeric
+@attribute air numeric
+@attribute anyway numeric
+@attribute ask numeric
+@attribute asked numeric
+@attribute bed numeric
+@attribute behind numeric
+@attribute beyond numeric
+@attribute bf4db numeric
+@attribute bigger numeric
+@attribute blind numeric
+@attribute bomb numeric
+@attribute bringing numeric
+@attribute brother numeric
+@attribute brought numeric
+@attribute challenge numeric
+@attribute channel numeric
+@attribute cheating numeric
+@attribute child numeric
+@attribute clip numeric
+@attribute clips numeric
+@attribute com/player/ban/100… numeric
+@attribute constantly numeric
+@attribute cops numeric
+@attribute cosplay numeric
+@attribute couldn numeric
+@attribute country numeric
+@attribute crime numeric
+@attribute crying numeric
+@attribute cs numeric
+@attribute cut numeric
+@attribute despite numeric
+@attribute driving numeric
+@attribute esports numeric
+@attribute except numeric
+@attribute fart numeric
+@attribute fat numeric
+@attribute followers numeric
+@attribute fridge numeric
+@attribute funniest numeric
+@attribute gamer numeric
+@attribute gang numeric
+@attribute government numeric
+@attribute grand numeric
+@attribute hack numeric
+@attribute head numeric
+@attribute he’s numeric
+@attribute hilarious numeric
+@attribute human numeric
+@attribute id numeric
+@attribute idk numeric
+@attribute industry numeric
+@attribute involved numeric
+@attribute i’ve numeric
+@attribute kid numeric
+@attribute knew numeric
+@attribute lack numeric
+@attribute lately numeric
+@attribute laugh numeric
+@attribute lies numeric
+@attribute liked numeric
+@attribute lil numeric
+@attribute lockdown numeric
+@attribute media numeric
+@attribute mins numeric
+@attribute mistake numeric
+@attribute montage numeric
+@attribute nigga numeric
+@attribute niggas numeric
+@attribute occurred numeric
+@attribute often numeric
+@attribute ones numeric
+@attribute party numeric
+@attribute personal numeric
+@attribute pleased numeric
+@attribute police numeric
+@attribute possible numeric
+@attribute posts numeric
+@attribute ppl numeric
+@attribute process numeric
+@attribute production numeric
+@attribute pussy numeric
+@attribute r numeric
+@attribute random numeric
+@attribute realize numeric
+@attribute result numeric
+@attribute room numeric
+@attribute scam numeric
+@attribute school numeric
+@attribute self numeric
+@attribute shoot numeric
+@attribute shots numeric
+@attribute sir numeric
+@attribute streamer numeric
+@attribute streamers numeric
+@attribute streams numeric
+@attribute sub numeric
+@attribute talented numeric
+@attribute tbh numeric
+@attribute themselves numeric
+@attribute throw numeric
+@attribute tournament numeric
+@attribute tournaments numeric
+@attribute turned numeric
+@attribute vids numeric
+@attribute viewers numeric
+@attribute virus numeric
+@attribute voice numeric
+@attribute welcome numeric
+@attribute we’re numeric
+@attribute winning numeric
+@attribute word numeric
+
+@data
+
+
+Classifier Model
+The independent probability of a class
+--------------------------------------
+Negative	0.3
+Neutral	0.24
+Positive	0.28
+Irrelevant	0.17
+
+The probability of a word given the class
+-----------------------------------------
+	Negative	Neutral	Positive	Irrelevant	
+&	0	0.01	0	0	
+-	0	0	0	0	
+/	0	0	0	0	
+//t	0	0.01	0	0	
+0	0	0	0	0	
+1	0	0	0	0	
+10	0	0	0	0	
+12	0	0	0	0	
+15	0	0	0	0	
+1Gig	0	0	0	0	
+2	0	0	0	0	
+20	0	0	0	0	
+2020	0	0	0	0	
+2077	0	0	0	0	
+21	0	0	0	0	
+24	0	0	0	0	
+2K	0	0	0	0	
+2k	0	0	0	0	
+3	0	0	0	0	
+30	0	0	0	0	
+3080	0	0	0	0	
+4	0	0	0	0	
+40GB	0	0	0	0	
+5	0	0	0	0	
+50	0	0	0	0	
+6	0	0	0	0	
+60	0	0	0	0	
+7	0	0	0	0	
+8	0	0	0	0	
+99	0	0	0	0	
+@2KSupport	0	0	0	0	
+@ATVIAssist	0	0	0	0	
+@Activision	0	0	0	0	
+@Beluba	0	0	0	0	
+@Blizzard_Ent	0	0	0	0	
+@Borderlands	0	0	0	0	
+@CSGO	0	0	0	0	
+@CallofDuty	0	0	0	0	
+@DOTA2	0	0	0	0	
+@EA	0	0	0	0	
+@EAHelp	0	0	0	0	
+@EAMaddenNFL	0	0	0	0	
+@EASPORTS	0	0	0	0	
+@EASPORTSFIFA	0	0	0	0	
+@EASPORTS_MUT	0	0	0	0	
+@FortniteGame	0	0	0	0	
+@GearboxOfficial	0	0	0	0	
+@GhostRecon	0	0	0	0	
+@GhostRecon_UK	0	0	0	0	
+@Google	0	0	0	0	
+@HomeDepot	0	0	0	0	
+@LeagueOfLegends	0	0	0	0	
+@Microsoft	0	0	0	0	
+@NBA2K	0	0	0	0	
+@NBA2K_MyTEAM	0	0	0	0	
+@NFL	0	0	0	0	
+@NVIDIAGeForce	0	0	0	0	
+@PUBG	0	0	0	0	
+@PUBG_Support	0	0	0	0	
+@PlayApex	0	0	0	0	
+@PlayHearthstone	0	0	0	0	
+@PlayOverwatch	0	0	0	0	
+@Rainbow6Game	0	0	0	0	
+@RockstarGames	0	0	0	0	
+@RockstarSupport	0	0	0	0	
+@Ronnie2K	0	0	0	0	
+@Ubisoft	0	0	0	0	
+@UbisoftSupport	0	0	0	0	
+@Verizon	0	0	0	0	
+@VerizonSupport	0	0	0	0	
+@Warcraft	0	0	0	0	
+@YouTube	0	0	0	0	
+@amazon	0	0	0	0	
+@nvidia	0	0	0	0	
+@valvesoftware	0	0	0	0	
+@verizon	0	0	0	0	
+@verizonfios	0	0	0	0	
+A	0	0	0	0	
+AND	0	0	0	0	
+ARE	0	0	0	0	
+After	0	0	0	0	
+All	0	0	0	0	
+Amazon	0	0	0	0	
+And	0	0	0	0	
+Anyone	0	0	0	0	
+Apex	0	0	0	0	
+Are	0	0	0	0	
+At	0	0	0	0	
+BS	0	0	0	0	
+Battlefield	0	0	0	0	
+Been	0	0	0	0	
+Black	0	0	0	0	
+Borderlands	0	0	0	0	
+Breakpoint	0	0	0	0	
+But	0	0	0	0	
+CAT8	0	0	0	0	
+CSGO	0	0	0	0	
+Call	0	0	0	0	
+Can	0	0	0	0	
+Chinese	0	0	0	0	
+Cold	0	0	0	0	
+Creed	0	0	0	0	
+Cyberpunk	0	0	0	0	
+DAMN	0	0	0	0	
+DO	0	0	0	0	
+DONT	0	0	0	0	
+Damn	0	0	0	0	
+Dead	0	0	0	0	
+Dear	0	0	0	0	
+Depot	0	0	0	0	
+Do	0	0	0	0	
+Don	0	0	0	0	
+Duty	0	0	0	0	
+EA	0	0	0	0	
+Even	0	0	0	0	
+Every	0	0	0	0	
+FB	0	0	0	0	
+FIFA	0	0	0	0	
+FIX	0	0	0	0	
+FOR	0	0	0	0	
+FUCK	0	0	0	0	
+FUCKING	0	0	0	0	
+Facebook	0	0	0	0	
+Fifa	0	0	0	0	
+Fix	0	0	0	0	
+For	0	0	0	0	
+Fortnite	0	0	0	0	
+Fuck	0	0	0	0	
+Fucking	0	0	0	0	
+GAME	0	0	0	0	
+GET	0	0	0	0	
+GTA	0	0	0	0	
+Game	0	0	0	0	
+Get	0	0	0	0	
+Ghost	0	0	0	0	
+God	0	0	0	0	
+Google	0	0	0	0	
+HAVE	0	0	0	0	
+HOW	0	0	0	0	
+He	0	0	0	0	
+Hearthstone	0	0	0	0	
+Hello	0	0	0	0	
+Here	0	0	0	0	
+Hey	0	0	0	0	
+Hi	0	0	0	0	
+Home	0	0	0	0	
+How	0	0	0	0	
+I	0.02	0.02	0.02	0.02	
+IN	0	0	0	0	
+IS	0	0	0	0	
+IT	0	0	0	0	
+If	0	0	0	0	
+Im	0	0	0	0	
+In	0	0	0	0	
+India	0	0	0	0	
+Is	0	0	0	0	
+It	0	0	0	0	
+Its	0	0	0	0	
+It’s	0	0	0	0	
+I’m	0	0	0	0	
+I’ve	0	0	0	0	
+Johnson	0	0	0	0	
+Just	0	0	0	0	
+League	0	0	0	0	
+Legends	0	0	0	0	
+Like	0	0	0	0	
+ME	0	0	0	0	
+MY	0	0	0	0	
+Madden	0	0	0	0	
+Man	0	0	0	0	
+Me	0	0	0	0	
+Microsoft	0	0	0	0	
+Mobile	0	0	0	0	
+More	0	0	0	0	
+My	0	0	0	0	
+NBA	0	0	0	0	
+NFL	0	0	0	0	
+NO	0	0	0	0	
+NOT	0	0	0	0	
+Never	0	0	0	0	
+New	0	0	0	0	
+No	0	0	0	0	
+Not	0	0	0	0	
+Nothing	0	0	0	0	
+Now	0	0	0	0	
+Nvidia	0	0	0	0	
+OF	0	0	0	0	
+ON	0	0	0	0	
+Of	0	0	0	0	
+Oh	0	0	0	0	
+On	0	0	0	0	
+One	0	0	0	0	
+Ops	0	0	0	0	
+Or	0	0	0	0	
+Overwatch	0	0	0	0	
+PC	0	0	0	0	
+PS4	0	0	0	0	
+PS5	0	0	0	0	
+PUBG	0	0	0	0	
+People	0	0	0	0	
+Play	0	0	0	0	
+PlayStation	0	0	0	0	
+Please	0	0	0	0	
+Pubg	0	0	0	0	
+Really	0	0	0	0	
+Red	0	0	0	0	
+Redemption	0	0	0	0	
+S	0	0	0	0	
+SFTP	0	0	0	0	
+SHIT	0	0	0	0	
+STOP	0	0	0	0	
+Series	0	0	0	0	
+Shit	0	0	0	0	
+Smh	0	0	0	0	
+So	0	0	0	0	
+Some	0	0	0	0	
+Sony	0	0	0	0	
+Still	0	0	0	0	
+Stop	0	0	0	0	
+THAT	0	0	0	0	
+THE	0	0	0	0	
+THIS	0	0	0	0	
+TO	0	0	0	0	
+Test	0	0	0	0	
+Thank	0	0	0	0	
+That	0	0	0	0	
+That’s	0	0	0	0	
+The	0	0.01	0	0	
+There	0	0	0	0	
+These	0	0	0	0	
+They	0	0	0	0	
+This	0	0	0	0	
+Too	0	0	0	0	
+Tried	0	0	0	0	
+Trump	0	0	0	0	
+Twitter	0	0	0	0	
+U	0	0	0	0	
+US	0	0	0	0	
+Ubisoft	0	0	0	0	
+V	0	0	0	0	
+Verizon	0	0	0	0	
+Very	0	0	0	0	
+WHAT	0	0	0	0	
+WHY	0	0	0	0	
+WTF	0	0	0	0	
+War	0	0	0	0	
+Warcraft	0	0	0	0	
+Warzone	0	0	0	0	
+We	0	0	0	0	
+Well	0	0	0	0	
+What	0	0	0	0	
+When	0	0	0	0	
+Who	0	0	0	0	
+Why	0	0	0	0	
+Windows	0	0	0	0	
+World	0	0	0	0	
+Wow	0	0	0	0	
+Wtf	0	0	0	0	
+X	0	0	0	0	
+Xbox	0	0	0	0	
+YOU	0	0	0	0	
+YOUR	0	0	0	0	
+Yo	0	0	0	0	
+You	0	0	0	0	
+Your	0	0	0	0	
+Y’all	0	0	0	0	
+a	0.02	0.02	0.02	0.02	
+able	0	0	0	0	
+about	0	0	0	0	
+absolute	0	0	0	0	
+absolutely	0	0	0	0	
+access	0	0	0	0	
+account	0	0	0	0	
+accounts	0	0	0	0	
+actual	0	0	0	0	
+actually	0	0	0	0	
+add	0	0	0	0	
+ads	0	0	0	0	
+af	0	0	0	0	
+after	0	0	0	0	
+again	0	0	0	0	
+against	0	0	0	0	
+ago	0	0	0	0	
+ain’t	0	0	0	0	
+all	0	0	0	0	
+almost	0	0	0	0	
+already	0	0	0	0	
+also	0	0	0	0	
+always	0	0	0	0	
+am	0	0	0	0	
+amazon	0	0	0	0	
+amount	0	0	0	0	
+an	0	0	0	0	
+and	0.02	0.02	0.02	0.02	
+annoying	0	0	0	0	
+another	0	0	0	0	
+any	0	0	0	0	
+anymore	0	0	0	0	
+anyone	0	0	0	0	
+anything	0	0	0	0	
+anywhere	0	0	0	0	
+app	0	0	0	0	
+apps	0	0	0	0	
+are	0.01	0	0	0.01	
+aren	0	0	0	0	
+aren’t	0	0	0	0	
+around	0	0	0	0	
+as	0	0	0	0	
+ass	0	0	0	0	
+at	0	0	0	0	
+audio	0	0	0	0	
+available	0	0	0	0	
+away	0	0	0	0	
+awful	0	0	0	0	
+baby	0	0	0	0	
+back	0	0	0	0	
+bad	0	0	0	0	
+ball	0	0	0	0	
+ban	0	0	0	0	
+banned	0	0	0	0	
+barely	0	0	0	0	
+battle	0	0	0	0	
+battlefield	0	0	0	0	
+bc	0	0	0	0	
+be	0	0.01	0.01	0.01	
+because	0	0	0	0	
+been	0	0	0	0	
+before	0	0	0	0	
+being	0	0	0	0	
+believe	0	0	0	0	
+best	0	0	0	0	
+beta	0	0	0	0	
+better	0	0	0	0	
+between	0	0	0	0	
+big	0	0	0	0	
+bit	0	0	0	0	
+bitch	0	0	0	0	
+black	0	0	0	0	
+blue	0	0	0	0	
+borderlands	0	0	0	0	
+boring	0	0	0	0	
+both	0	0	0	0	
+bought	0	0	0	0	
+break	0	0	0	0	
+breakpoint	0	0	0	0	
+bring	0	0	0	0	
+bro	0	0	0	0	
+broke	0	0	0	0	
+broken	0	0	0	0	
+bs	0	0	0	0	
+bug	0	0	0	0	
+bugs	0	0	0	0	
+bullshit	0	0	0	0	
+business	0	0	0	0	
+but	0.01	0.01	0.01	0	
+buy	0	0	0	0	
+buying	0	0	0	0	
+by	0	0	0	0	
+cables	0	0	0	0	
+call	0	0	0	0	
+called	0	0	0	0	
+calling	0	0	0	0	
+calls	0	0	0	0	
+came	0	0	0	0	
+can	0	0	0	0	
+cancer	0	0	0	0	
+cannot	0	0	0	0	
+cant	0	0	0	0	
+can’t	0	0	0	0	
+card	0	0	0	0	
+cards	0	0	0	0	
+care	0	0	0	0	
+cause	0	0	0	0	
+change	0	0	0	0	
+changes	0	0	0	0	
+character	0	0	0	0	
+characters	0	0	0	0	
+check	0	0	0	0	
+close	0	0	0	0	
+closed	0	0	0	0	
+code	0	0	0	0	
+com/watch	0	0	0	0	
+come	0	0	0	0	
+comes	0	0	0	0	
+coming	0	0	0	0	
+community	0	0	0	0	
+companies	0	0	0	0	
+company	0	0	0	0	
+complete	0	0	0	0	
+completely	0	0	0	0	
+connect	0	0	0	0	
+connection	0	0	0	0	
+console	0	0	0	0	
+content	0	0	0	0	
+control	0	0	0	0	
+controller	0	0	0	0	
+could	0	0	0	0	
+crap	0	0	0	0	
+crashed	0	0	0	0	
+crashes	0	0	0	0	
+crashing	0	0	0	0	
+crazy	0	0	0	0	
+credit	0	0	0	0	
+creed	0	0	0	0	
+csgo	0	0	0	0	
+current	0	0	0	0	
+currently	0	0	0	0	
+customer	0	0	0	0	
+customers	0	0	0	0	
+cuz	0	0	0	0	
+cyberpunk	0	0	0	0	
+d	0	0	0	0	
+damn	0	0	0	0	
+data	0	0	0	0	
+date	0	0	0	0	
+day	0	0	0	0	
+days	0	0	0	0	
+dead	0	0	0	0	
+deal	0	0	0	0	
+death	0	0	0	0	
+decided	0	0	0	0	
+decision	0	0	0	0	
+delay	0	0	0	0	
+delayed	0	0	0	0	
+delete	0	0	0	0	
+deleted	0	0	0	0	
+depot	0	0	0	0	
+did	0	0	0	0	
+didn	0	0	0	0	
+didn’t	0	0	0	0	
+die	0	0	0	0	
+different	0	0	0	0	
+difficult	0	0	0	0	
+disappointed	0	0	0	0	
+disappointing	0	0	0	0	
+disconnected	0	0	0	0	
+disgusting	0	0	0	0	
+do	0	0	0	0	
+does	0	0	0	0	
+doesn	0	0	0	0	
+doesn’t	0	0	0	0	
+dog	0	0	0	0	
+doing	0	0	0	0	
+don	0	0	0	0	
+done	0	0	0	0	
+dont	0	0	0	0	
+don’t	0	0	0	0	
+dota	0	0	0	0	
+down	0	0	0	0	
+drop	0	0	0	0	
+dropped	0	0	0	0	
+dropping	0	0	0	0	
+drops	0	0	0	0	
+dudes	0	0	0	0	
+due	0	0	0	0	
+dumb	0	0	0	0	
+during	0	0	0	0	
+duty	0	0	0	0	
+each	0	0	0	0	
+early	0	0	0	0	
+either	0	0	0	0	
+else	0	0	0	0	
+email	0	0	0	0	
+employees	0	0	0	0	
+end	0	0	0	0	
+enough	0	0	0	0	
+entire	0	0	0	0	
+error	0	0	0	0	
+even	0	0	0	0	
+ever	0	0	0	0	
+every	0	0	0	0	
+everyone	0	0	0	0	
+everything	0	0	0	0	
+everytime	0	0	0	0	
+exist	0	0	0	0	
+expensive	0	0	0	0	
+experience	0	0	0	0	
+explain	0	0	0	0	
+face	0	0	0	0	
+facebook	0	0	0	0	
+fact	0	0	0	0	
+fail	0	0	0	0	
+fake	0	0	0	0	
+fans	0	0	0	0	
+far	0	0	0	0	
+fast	0	0	0	0	
+feel	0	0	0	0	
+feels	0	0	0	0	
+few	0	0	0	0	
+fifa	0	0	0	0	
+finally	0	0	0	0	
+find	0	0	0	0	
+fine	0	0	0	0	
+finished	0	0	0	0	
+first	0	0	0	0	
+fix	0	0	0	0	
+fixed	0	0	0	0	
+folks	0	0	0	0	
+for	0.01	0.01	0.01	0.02	
+forgot	0	0	0	0	
+fortnite	0	0	0	0	
+found	0	0	0	0	
+franchise	0	0	0	0	
+free	0	0	0	0	
+friend	0	0	0	0	
+friends	0	0	0	0	
+from	0	0	0	0	
+frustrating	0	0	0	0	
+fuck	0	0	0	0	
+fucked	0	0	0	0	
+fuckin	0	0	0	0	
+fucking	0	0	0	0	
+full	0	0	0	0	
+fun	0	0	0	0	
+game	0.01	0	0.01	0	
+gameplay	0	0	0	0	
+games	0	0	0	0	
+gaming	0	0	0	0	
+garbage	0	0	0	0	
+gen	0	0	0	0	
+get	0	0	0	0	
+gets	0	0	0	0	
+getting	0	0	0	0	
+give	0	0	0	0	
+given	0	0	0	0	
+giving	0	0	0	0	
+glitch	0	0	0	0	
+glitches	0	0	0	0	
+go	0	0	0	0	
+god	0	0	0	0	
+goes	0	0	0	0	
+going	0	0	0	0	
+gold	0	0	0	0	
+gone	0	0	0	0	
+gonna	0	0	0	0	
+good	0	0	0.01	0	
+google	0	0	0	0	
+got	0	0	0	0	
+gotta	0	0	0	0	
+graphics	0	0	0	0	
+great	0	0	0	0	
+gta	0	0	0	0	
+guess	0	0	0	0	
+guy	0	0	0	0	
+guys	0	0	0	0	
+hacked	0	0	0	0	
+hackers	0	0	0	0	
+had	0	0	0	0	
+half	0	0	0	0	
+happen	0	0	0	0	
+happened	0	0	0	0	
+happening	0	0	0	0	
+happens	0	0	0	0	
+happy	0	0	0	0	
+hard	0	0	0	0	
+has	0	0	0	0.01	
+hate	0	0	0	0	
+have	0.01	0	0.01	0.01	
+haven	0	0	0	0	
+haven’t	0	0	0	0	
+having	0	0	0	0	
+he	0	0	0	0	
+hear	0	0	0	0	
+hearthstone	0	0	0	0	
+hell	0	0	0	0	
+help	0	0	0	0	
+her	0	0	0	0	
+here	0	0	0	0	
+hero	0	0	0	0	
+hey	0	0	0	0	
+high	0	0	0	0	
+him	0	0	0	0	
+his	0	0	0	0	
+history	0	0	0	0	
+hit	0	0	0	0	
+hold	0	0	0	0	
+home	0	0	0	0	
+honestly	0	0	0	0	
+hope	0	0	0	0	
+hour	0	0	0	0	
+hours	0	0	0	0	
+house	0	0	0	0	
+how	0	0	0	0	
+https	0	0.01	0	0	
+huge	0	0	0	0	
+i	0	0	0	0	
+idea	0	0	0	0	
+if	0	0	0	0	
+im	0	0	0	0	
+in	0.01	0.01	0.01	0.01	
+including	0	0	0	0	
+instead	0	0	0	0	
+internet	0	0	0	0	
+into	0	0	0	0	
+is	0.02	0.01	0.02	0.02	
+isn	0	0	0	0	
+isn’t	0	0	0	0	
+issue	0	0	0	0	
+issues	0	0	0	0	
+it	0.01	0.01	0.01	0.01	
+its	0	0	0	0	
+it’s	0	0	0	0	
+job	0	0	0	0	
+johnson	0	0	0	0	
+joke	0	0	0	0	
+just	0	0.01	0	0	
+keep	0	0	0	0	
+keeps	0	0	0	0	
+kicked	0	0	0	0	
+kill	0	0	0	0	
+killed	0	0	0	0	
+killing	0	0	0	0	
+kind	0	0	0	0	
+kinda	0	0	0	0	
+know	0	0	0	0	
+lag	0	0	0	0	
+lagging	0	0	0	0	
+last	0	0	0	0	
+late	0	0	0	0	
+launch	0	0	0	0	
+league	0	0	0	0	
+least	0	0	0	0	
+leave	0	0	0	0	
+left	0	0	0	0	
+legends	0	0	0	0	
+less	0	0	0	0	
+let	0	0	0	0	
+letting	0	0	0	0	
+level	0	0	0	0	
+life	0	0	0	0	
+like	0	0	0	0	
+line	0	0	0	0	
+lines	0	0	0	0	
+list	0	0	0	0	
+literally	0	0	0	0	
+little	0	0	0	0	
+live	0	0	0	0	
+ll	0	0	0	0	
+lmao	0	0	0	0	
+load	0	0	0	0	
+loading	0	0	0	0	
+lobby	0	0	0	0	
+log	0	0	0	0	
+login	0	0	0	0	
+lol	0	0	0	0	
+long	0	0	0	0	
+longer	0	0	0	0	
+look	0	0	0	0	
+looking	0	0	0	0	
+looks	0	0	0	0	
+lose	0	0	0	0	
+losing	0	0	0	0	
+lost	0	0	0	0	
+lot	0	0	0	0	
+love	0	0	0.01	0	
+low	0	0	0	0	
+m	0	0	0	0	
+mad	0	0	0	0	
+madden	0	0	0	0	
+made	0	0	0	0	
+main	0	0	0	0	
+major	0	0	0	0	
+make	0	0	0	0	
+makes	0	0	0	0	
+making	0	0	0	0	
+man	0	0	0	0	
+many	0	0	0	0	
+map	0	0	0	0	
+market	0	0	0	0	
+mask	0	0	0	0	
+massive	0	0	0	0	
+match	0	0	0	0	
+matches	0	0	0	0	
+matchmaking	0	0	0	0	
+me	0.01	0.01	0.01	0.01	
+mean	0	0	0	0	
+means	0	0	0	0	
+men	0	0	0	0	
+mess	0	0	0	0	
+microsoft	0	0	0	0	
+middle	0	0	0	0	
+might	0	0	0	0	
+million	0	0	0	0	
+mind	0	0	0	0	
+minutes	0	0	0	0	
+miss	0	0	0	0	
+missing	0	0	0	0	
+mobile	0	0	0	0	
+mode	0	0	0	0	
+money	0	0	0	0	
+month	0	0	0	0	
+months	0	0	0	0	
+more	0	0	0	0	
+morning	0	0	0	0	
+most	0	0	0	0	
+move	0	0	0	0	
+much	0	0	0	0	
+multiple	0	0	0	0	
+must	0	0	0	0	
+my	0.01	0.01	0.01	0.01	
+name	0	0	0	0	
+need	0	0	0	0	
+needs	0	0	0	0	
+never	0	0	0	0	
+new	0	0	0	0	
+news	0	0	0	0	
+next	0	0	0	0	
+nice	0	0	0	0	
+night	0	0	0	0	
+no	0	0	0	0	
+not	0.01	0	0	0	
+nothing	0	0	0	0	
+now	0	0	0	0	
+number	0	0	0	0	
+nvidia	0	0	0	0	
+of	0.01	0.02	0.02	0.02	
+off	0	0	0	0	
+oh	0	0	0	0	
+old	0	0	0	0	
+on	0.01	0.01	0.01	0.01	
+once	0	0	0	0	
+one	0	0	0	0	
+online	0	0	0	0	
+only	0	0	0	0	
+open	0	0	0	0	
+ops	0	0	0	0	
+option	0	0	0	0	
+or	0	0	0	0	
+order	0	0	0	0	
+ordered	0	0	0	0	
+other	0	0	0	0	
+our	0	0	0	0	
+out	0	0.01	0	0.01	
+over	0	0	0	0	
+overwatch	0	0	0	0	
+own	0	0	0	0	
+packs	0	0	0	0	
+page	0	0	0	0	
+paid	0	0	0	0	
+part	0	0	0	0	
+pass	0	0	0	0	
+past	0	0	0	0	
+patch	0	0	0	0	
+pay	0	0	0	0	
+paying	0	0	0	0	
+pc	0	0	0	0	
+people	0	0	0	0	
+performed	0	0	0	0	
+person	0	0	0	0	
+phone	0	0	0	0	
+pic	0.01	0	0.01	0	
+pick	0	0	0	0	
+place	0	0	0	0	
+plan	0	0	0	0	
+platform	0	0	0	0	
+play	0	0	0	0	
+played	0	0	0	0	
+player	0	0	0	0	
+players	0	0	0	0	
+playing	0	0	0	0	
+playstation	0	0	0	0	
+please	0	0	0	0	
+pls	0	0	0	0	
+plz	0	0	0	0	
+point	0	0	0	0	
+points	0	0	0	0	
+powder	0	0	0	0	
+pretty	0	0	0	0	
+price	0	0	0	0	
+prime	0	0	0	0	
+pro	0	0	0	0	
+probably	0	0	0	0	
+problem	0	0	0	0	
+problems	0	0	0	0	
+products	0	0	0	0	
+ps4	0	0	0	0	
+ps5	0	0	0	0	
+pubg	0	0	0	0	
+purchase	0	0	0	0	
+put	0	0	0	0	
+putting	0	0	0	0	
+quit	0	0	0	0	
+racist	0	0	0	0	
+rank	0	0	0	0	
+ranked	0	0	0	0	
+rather	0	0	0	0	
+ratings	0	0	0	0	
+re	0	0	0	0	
+read	0	0	0	0	
+ready	0	0	0	0	
+real	0	0	0	0	
+really	0	0	0	0	
+reason	0	0	0	0	
+received	0	0	0	0	
+red	0	0	0	0	
+redemption	0	0	0	0	
+refund	0	0	0	0	
+release	0	0	0	0	
+released	0	0	0	0	
+remember	0	0	0	0	
+remove	0	0	0	0	
+removed	0	0	0	0	
+report	0	0	0	0	
+reset	0	0	0	0	
+response	0	0	0	0	
+rewards	0	0	0	0	
+ridiculous	0	0	0	0	
+right	0	0	0	0	
+rn	0	0	0	0	
+row	0	0	0	0	
+ruining	0	0	0	0	
+run	0	0	0	0	
+running	0	0	0	0	
+s	0	0.01	0.01	0.01	
+sad	0	0	0	0	
+said	0	0	0	0	
+same	0	0	0	0	
+saw	0	0	0	0	
+say	0	0	0	0	
+saying	0	0	0	0	
+says	0	0	0	0	
+screen	0	0	0	0	
+screwed	0	0	0	0	
+season	0	0	0	0	
+second	0	0	0	0	
+see	0	0	0	0	
+seeing	0	0	0	0	
+seem	0	0	0	0	
+seems	0	0	0	0	
+seen	0	0	0	0	
+sell	0	0	0	0	
+selling	0	0	0	0	
+sense	0	0	0	0	
+sent	0	0	0	0	
+series	0	0	0	0	
+seriously	0	0	0	0	
+server	0	0	0	0	
+servers	0	0	0	0	
+service	0	0	0	0	
+services	0	0	0	0	
+set	0	0	0	0	
+shit	0	0	0	0	
+shitty	0	0	0	0	
+shooting	0	0	0	0	
+shot	0	0	0	0	
+should	0	0	0	0	
+show	0	0	0	0	
+shows	0	0	0	0	
+shut	0	0	0	0	
+sick	0	0	0	0	
+side	0	0	0	0	
+since	0	0	0	0	
+single	0	0	0	0	
+site	0	0	0	0	
+skin	0	0	0	0	
+skins	0	0	0	0	
+slow	0	0	0	0	
+small	0	0	0	0	
+smh	0	0	0	0	
+so	0.01	0	0.01	0.01	
+social	0	0	0	0	
+sold	0	0	0	0	
+some	0	0	0	0	
+someone	0	0	0	0	
+something	0	0	0	0	
+sometimes	0	0	0	0	
+soon	0	0	0	0	
+sorry	0	0	0	0	
+sort	0	0	0	0	
+sound	0	0	0	0	
+sounds	0	0	0	0	
+speed	0	0	0	0	
+speedtest	0	0	0	0	
+spend	0	0	0	0	
+spent	0	0	0	0	
+start	0	0	0	0	
+started	0	0	0	0	
+starting	0	0	0	0	
+stay	0	0	0	0	
+still	0	0	0	0	
+stock	0	0	0	0	
+stop	0	0	0	0	
+stopped	0	0	0	0	
+store	0	0	0	0	
+stores	0	0	0	0	
+story	0	0	0	0	
+straight	0	0	0	0	
+stuck	0	0	0	0	
+stuff	0	0	0	0	
+stupid	0	0	0	0	
+such	0	0	0	0	
+suck	0	0	0	0	
+sucks	0	0	0	0	
+suddenly	0	0	0	0	
+super	0	0	0	0	
+support	0	0	0	0	
+supposed	0	0	0	0	
+sure	0	0	0	0	
+swear	0	0	0	0	
+switch	0	0	0	0	
+symmetric	0	0	0	0	
+system	0	0	0	0	
+t	0.01	0	0	0	
+take	0	0	0	0	
+takes	0	0	0	0	
+taking	0	0	0	0	
+talk	0	0	0	0	
+talking	0	0	0	0	
+team	0	0	0	0	
+tell	0	0	0	0	
+terrible	0	0	0	0	
+tf	0	0	0	0	
+than	0	0	0	0	
+thanks	0	0	0	0	
+that	0.01	0.01	0.01	0.01	
+that’s	0	0	0	0	
+the	0.03	0.02	0.03	0.03	
+their	0	0	0	0	
+them	0	0	0	0	
+then	0	0	0	0	
+there	0	0	0	0	
+these	0	0	0	0	
+they	0	0	0	0	
+they’re	0	0	0	0	
+thing	0	0	0	0	
+things	0	0	0	0	
+think	0	0	0	0	
+thinking	0	0	0	0	
+this	0.01	0.01	0.01	0.01	
+tho	0	0	0	0	
+those	0	0	0	0	
+though	0	0	0	0	
+thought	0	0	0	0	
+three	0	0	0	0	
+through	0	0	0	0	
+till	0	0	0	0	
+time	0	0	0	0	
+times	0	0	0	0	
+tired	0	0	0	0	
+to	0.02	0.02	0.02	0.02	
+today	0	0	0	0	
+together	0	0	0	0	
+told	0	0	0	0	
+tonight	0	0	0	0	
+too	0	0	0	0	
+took	0	0	0	0	
+top	0	0	0	0	
+toxic	0	0	0	0	
+trash	0	0	0	0	
+trial	0	0	0	0	
+tried	0	0	0	0	
+true	0	0	0	0	
+trust	0	0	0	0	
+try	0	0	0	0	
+trying	0	0	0	0	
+turn	0	0	0	0	
+tweet	0	0	0	0	
+twice	0	0	0	0	
+twitch	0	0	0	0	
+twitter	0.01	0	0.01	0	
+two	0	0	0	0	
+u	0	0	0	0	
+unable	0	0	0	0	
+understand	0	0	0	0	
+unplayable	0	0	0	0	
+until	0	0	0	0	
+up	0	0	0	0	
+update	0	0	0	0	
+updates	0	0	0	0	
+upset	0	0	0	0	
+ur	0	0	0	0	
+us	0	0	0	0	
+use	0	0	0	0	
+used	0	0	0	0	
+using	0	0	0	0	
+v	0	0	0	0	
+vaccine	0	0	0	0	
+ve	0	0	0	0	
+verizon	0	0	0	0	
+version	0	0	0	0	
+very	0	0	0	0	
+via	0	0	0	0	
+video	0	0	0	0	
+w	0	0	0	0	
+wait	0	0	0	0	
+waiting	0	0	0	0	
+wanna	0	0	0	0	
+want	0	0	0	0	
+wanted	0	0	0	0	
+wants	0	0	0	0	
+war	0	0	0	0	
+was	0	0	0.01	0	
+waste	0	0	0	0	
+watch	0	0	0	0	
+watching	0	0	0	0	
+way	0	0	0	0	
+we	0	0	0	0	
+week	0	0	0	0	
+weeks	0	0	0	0	
+well	0	0	0	0	
+went	0	0	0	0	
+were	0	0	0	0	
+what	0	0	0	0	
+whatever	0	0	0	0	
+what’s	0	0	0	0	
+when	0	0	0	0	
+where	0	0	0	0	
+which	0	0	0	0	
+while	0	0	0	0	
+white	0	0	0	0	
+who	0	0	0	0	
+whole	0	0	0	0	
+why	0	0	0	0	
+will	0	0	0	0	
+win	0	0	0	0	
+wired	0	0	0	0	
+wit	0	0	0	0	
+with	0.01	0.01	0.01	0.01	
+without	0	0	0	0	
+won	0	0	0	0	
+wondering	0	0	0	0	
+wont	0	0	0	0	
+won’t	0	0	0	0	
+work	0	0	0	0	
+worked	0	0	0	0	
+working	0	0	0	0	
+works	0	0	0	0	
+world	0	0	0	0	
+worse	0	0	0	0	
+worst	0	0	0	0	
+worth	0	0	0	0	
+would	0	0	0	0	
+wrong	0	0	0	0	
+wtf	0	0	0	0	
+xbox	0	0	0	0	
+y	0	0	0	0	
+ya	0	0	0	0	
+yall	0	0	0	0	
+year	0	0	0	0	
+years	0	0	0	0	
+yesterday	0	0	0	0	
+yet	0	0	0	0	
+yo	0	0	0	0	
+you	0.01	0.01	0.01	0.01	
+your	0	0	0	0	
+youtu	0	0	0	0	
+youtube	0	0	0	0	
+you’re	0	0	0	0	
+y’all	0	0	0	0	
+”	0	0	0	0	
+$100	0	0	0	0	
+$JNJ	0	0	0	0	
++	0	0	0	0	
+00	0	0	0	0	
+000	0	0	0	0	
+100	0	0	0	0	
+100%	0	0	0	0	
+2019	0	0	0	0	
+24Hr	0	0	0	0	
+5G	0	0	0	0	
+9	0	0	0	0	
+<	0	0	0	0	
+>	0	0	0	0	
+@CyberpunkGame	0	0	0	0	
+@PlayStation	0	0	0	0	
+AI	0	0	0	0	
+AMD	0	0	0	0	
+AT&T	0	0	0	0	
+About	0	0	0	0	
+Achievement	0	0	0	0	
+Also	0	0	0	0	
+Amazing	0	0	0	0	
+American	0	0	0	0	
+An	0	0	0	0	
+App	0	0	0	0	
+Apple	0	0	0	0	
+As	0	0	0	0	
+Auto	0	0	0	0	
+BEST	0	0	0	0	
+Baby	0	0	0	0	
+Be	0	0	0	0	
+Best	0	0	0	0	
+Big	0	0	0	0	
+Business	0	0	0	0	
+Buy	0	0	0	0	
+By	0	0	0	0	
+COVID-19	0	0	0	0	
+CS	0	0	0	0	
+Canada	0	0	0	0	
+Check	0	0	0	0	
+China	0	0	0	0	
+Click	0	0	0	0	
+Come	0	0	0	0	
+Congratulations	0	0	0	0	
+Cool	0	0	0	0	
+Core	0	0	0	0	
+Covid-19	0	0	0	0	
+D	0	0	0	0	
+Daily	0	0	0	0	
+Data	0	0	0	0	
+Day	0	0	0	0	
+Deals	0	0	0	0	
+Delayed	0	0	0	0	
+Dota	0	0	0	0	
+Edge	0	0	0	0	
+Edition	0	0	0	0	
+Enjoy	0	0	0	0	
+Epic	0	0	0	0	
+Esports	0	0	0	0	
+FREE	0	0	0	0	
+Finally	0	0	0	0	
+First	0	0	0	0	
+Follow	0	0	0	0	
+From	0	0	0	0	
+GO	0	0	0	0	
+GPU	0	0	0	0	
+GS	0	0	0	0	
+GTX	0	0	0	0	
+Games	0	0	0	0	
+Gaming	0	0	0	0	
+GeForce	0	0	0	0	
+Global	0	0	0	0	
+Go	0	0	0	0	
+Going	0	0	0	0	
+Gold	0	0	0	0	
+Golden	0	0	0	0	
+Good	0	0	0	0	
+Got	0	0	0	0	
+Grand	0	0	0	0	
+Great	0	0	0	0	
+Group	0	0	0	0	
+Hakusho	0	0	0	0	
+Happy	0	0	0	0	
+Has	0	0	0	0	
+Have	0	0	0	0	
+Hope	0	0	0	0	
+III	0	0	0	0	
+IM	0	0	0	0	
+Inc	0	0	0	0	
+Instagram	0	0	0	0	
+Intel	0	0	0	0	
+I’ll	0	0	0	0	
+Johnson’s	0	0	0	0	
+Join	0	0	0	0	
+Kamuy	0	0	0	0	
+Keep	0	0	0	0	
+L	0	0	0	0	
+LIVE	0	0	0	0	
+Let	0	0	0	0	
+Live	0	0	0	0	
+LoL	0	0	0	0	
+Love	0	0	0	0	
+Major	0	0	0	0	
+Make	0	0	0	0	
+Makes	0	0	0	0	
+Market	0	0	0	0	
+May	0	0	0	0	
+Modern	0	0	0	0	
+Monday	0	0	0	0	
+NOW	0	0	0	0	
+NVIDIA	0	0	0	0	
+News	0	0	0	0	
+Nice	0	0	0	0	
+Nvidia’s	0	0	0	0	
+ONE	0	0	0	0	
+Online	0	0	0	0	
+Only	0	0	0	0	
+Our	0	0	0	0	
+Out	0	0	0	0	
+Over	0	0	0	0	
+Pay	0	0	0	0	
+Playing	0	0	0	0	
+Powder	0	0	0	0	
+Price	0	0	0	0	
+Prime	0	0	0	0	
+Pro	0	0	0	0	
+Punch	0	0	0	0	
+RT	0	0	0	0	
+RTX	0	0	0	0	
+Ranked	0	0	0	0	
+Read	0	0	0	0	
+Recon	0	0	0	0	
+Retweet	0	0	0	0	
+Sale	0	0	0	0	
+Saturday	0	0	0	0	
+Season	0	0	0	0	
+See	0	0	0	0	
+Selling	0	0	0	0	
+Sorry	0	0	0	0	
+Stock	0	0	0	0	
+Store	0	0	0	0	
+Stream	0	0	0	0	
+Summoners	0	0	0	0	
+Surface	0	0	0	0	
+TV	0	0	0	0	
+Teams	0	0	0	0	
+Thanks	0	0	0	0	
+Theft	0	0	0	0	
+Then	0	0	0	0	
+TikTok	0	0	0	0	
+Time	0	0	0	0	
+To	0	0	0	0	
+Today	0	0	0	0	
+Top	0	0	0	0	
+Try	0	0	0	0	
+Trying	0	0	0	0	
+Twitch	0	0	0	0	
+UK	0	0	0	0	
+Unit	0	0	0	0	
+Us	0	0	0	0	
+Valve	0	0	0	0	
+Video	0	0	0	0	
+Vision	0	0	0	0	
+Warfare	0	0	0	0	
+Was	0	0	0	0	
+Watch	0	0	0	0	
+Will	0	0	0	0	
+With	0	0	0	0	
+WoW	0	0	0	0	
+Won	0	0	0	0	
+YouTube	0	0	0	0	
+Yu	0	0	0	0	
+[	0	0	0	0	
+action	0	0	0	0	
+alone	0	0	0	0	
+amazing	0	0	0	0	
+amzn	0	0	0	0	
+announce	0	0	0	0	
+appreciated	0	0	0	0	
+awesome	0	0	0	0	
+beautiful	0	0	0	0	
+become	0	0	0	0	
+below	0	0	0	0	
+biggest	0	0	0	0	
+birdeye	0	0	0	0	
+birthday	0	0	0	0	
+book	0	0	0	0	
+bots	0	0	0	0	
+buff	0	0	0	0	
+car	0	0	0	0	
+caused	0	0	0	0	
+chance	0	0	0	0	
+chat	0	0	0	0	
+claims	0	0	0	0	
+class	0	0	0	0	
+co	0	0	0	0	
+com	0	0	0	0	
+com/	0	0	0	0	
+com/johnson-johnso…	0	0	0	0	
+comments	0	0	0	0	
+cool	0	0	0	0	
+coronavirus	0	0	0	0	
+create	0	0	0	0	
+cute	0	0	0	0	
+damage	0	0	0	0	
+deals	0	0	0	0	
+definitely	0	0	0	0	
+died	0	0	0	0	
+dlvr	0	0	0	0	
+download	0	0	0	0	
+drive	0	0	0	0	
+dude	0	0	0	0	
+earned	0	0	0	0	
+easy	0	0	0	0	
+enjoy	0	0	0	0	
+entering	0	0	0	0	
+epic	0	0	0	0	
+event	0	0	0	0	
+everyday	0	0	0	0	
+excited	0	0	0	0	
+exciting	0	0	0	0	
+family	0	0	0	0	
+fan	0	0	0	0	
+favorite	0	0	0	0	
+features	0	0	0	0	
+felt	0	0	0	0	
+food	0	0	0	0	
+forever	0	0	0	0	
+forward	0	0	0	0	
+funny	0	0	0	0	
+gave	0	0	0	0	
+gift	0	0	0	0	
+girl	0	0	0	0	
+gotten	0	0	0	0	
+grind	0	0	0	0	
+group	0	0	0	0	
+hair	0	0	0	0	
+hands	0	0	0	0	
+hang	0	0	0	0	
+heard	0	0	0	0	
+helping	0	0	0	0	
+ift	0	0	0	0	
+illness	0	0	0	0	
+impressed	0	0	0	0	
+incredible	0	0	0	0	
+instagram	0	0	0	0	
+interesting	0	0	0	0	
+item	0	0	0	0	
+join	0	0	0	0	
+kills	0	0	0	0	
+laptop	0	0	0	0	
+later	0	0	0	0	
+latest	0	0	0	0	
+lawsuit	0	0	0	0	
+lawsuits	0	0	0	0	
+leaked	0	0	0	0	
+learn	0	0	0	0	
+learning	0	0	0	0	
+link	0	0	0	0	
+loot	0	0	0	0	
+loved	0	0	0	0	
+luck	0	0	0	0	
+matter	0	0	0	0	
+may	0	0	0	0	
+maybe	0	0	0	0	
+mixer	0	0	0	0	
+mom	0	0	0	0	
+moment	0	0	0	0	
+music	0	0	0	0	
+myself	0	0	0	0	
+n	0	0	0	0	
+offer	0	0	0	0	
+opportunity	0	0	0	0	
+others	0	0	0	0	
+paper	0	0	0	0	
+participant	0	0	0	0	
+paused	0	0	0	0	
+perfect	0	0	0	0	
+performance	0	0	0	0	
+piece	0	0	0	0	
+pissed	0	0	0	0	
+popular	0	0	0	0	
+post	0	0	0	0	
+posted	0	0	0	0	
+power	0	0	0	0	
+powerful	0	0	0	0	
+proud	0	0	0	0	
+quality	0	0	0	0	
+quiz	0	0	0	0	
+reading	0	0	0	0	
+redd	0	0	0	0	
+review	0	0	0	0	
+round	0	0	0	0	
+runs	0	0	0	0	
+sale	0	0	0	0	
+save	0	0	0	0	
+search	0	0	0	0	
+share	0	0	0	0	
+she	0	0	0	0	
+showing	0	0	0	0	
+starts	0	0	0	0	
+stream	0	0	0	0	
+streaming	0	0	0	0	
+strong	0	0	0	0	
+study	0	0	0	0	
+talc	0	0	0	0	
+talc-based	0	0	0	0	
+tech	0	0	0	0	
+thank	0	0	0	0	
+theguardian	0	0	0	0	
+theverge	0	0	0	0	
+thousands	0	0	0	0	
+tomorrow	0	0	0	0	
+trailer	0	0	0	0	
+under	0	0	0	0	
+unexplained	0	0	0	0	
+users	0	0	0	0	
+videos	0	0	0	0	
+vs	0	0	0	0	
+wall	0	0	0	0	
+weekend	0	0	0	0	
+weird	0	0	0	0	
+women	0	0	0	0	
+wonderful	0	0	0	0	
+wow	0	0	0	0	
+x	0	0	0	0	
+|	0	0	0	0	
+–	0	0	0	0	
+—	0	0	0	0	
+•	0	0	0	0	
+…	0	0	0	0	
+14	0	0	0	0	
+19	0	0	0	0	
+25	0	0	0	0	
+4th	0	0	0	0	
+@assassinscreed	0	0	0	0	
+AC	0	0	0	0	
+Absolutely	0	0	0	0	
+Always	0	0	0	0	
+Another	0	0	0	0	
+April	0	0	0	0	
+Assassin	0	0	0	0	
+Assassins	0	0	0	0	
+Assassin’s	0	0	0	0	
+Awesome	0	0	0	0	
+Back	0	0	0	0	
+COD	0	0	0	0	
+Can’t	0	0	0	0	
+City	0	0	0	0	
+Congrats	0	0	0	0	
+DLC	0	0	0	0	
+Excited	0	0	0	0	
+FPS	0	0	0	0	
+Feels	0	0	0	0	
+Final	0	0	0	0	
+GOOD	0	0	0	0	
+Gameplay	0	0	0	0	
+Glad	0	0	0	0	
+Had	0	0	0	0	
+Help	0	0	0	0	
+Holy	0	0	0	0	
+Honestly	0	0	0	0	
+Huge	0	0	0	0	
+Idle-Empire	0	0	0	0	
+Interesting	0	0	0	0	
+I’d	0	0	0	0	
+LOT	0	0	0	0	
+LOVE	0	0	0	0	
+Last	0	0	0	0	
+Legend	0	0	0	0	
+Legendary	0	0	0	0	
+Looking	0	0	0	0	
+Looks	0	0	0	0	
+Loving	0	0	0	0	
+November	0	0	0	0	
+OMG	0	0	0	0	
+Odyssey	0	0	0	0	
+Ok	0	0	0	0	
+Origins	0	0	0	0	
+Perfect	0	0	0	0	
+Pretty	0	0	0	0	
+Rogue	0	0	0	0	
+SO	0	0	0	0	
+Seeing	0	0	0	0	
+Siege	0	0	0	0	
+Such	0	0	0	0	
+Super	0	0	0	0	
+Switch	0	0	0	0	
+TrueAchievement	0	0	0	0	
+Valhalla	0	0	0	0	
+WOW	0	0	0	0	
+Watching	0	0	0	0	
+achievements	0	0	0	0	
+addicted	0	0	0	0	
+along	0	0	0	0	
+announcement	0	0	0	0	
+apex	0	0	0	0	
+appreciate	0	0	0	0	
+art	0	0	0	0	
+assassin	0	0	0	0	
+assassins	0	0	0	0	
+badly	0	0	0	0	
+based	0	0	0	0	
+beat	0	0	0	0	
+bored	0	0	0	0	
+boy	0	0	0	0	
+boys	0	0	0	0	
+campaign	0	0	0	0	
+chill	0	0	0	0	
+clear	0	0	0	0	
+cold	0	0	0	0	
+competitive	0	0	0	0	
+consoles	0	0	0	0	
+continue	0	0	0	0	
+copy	0	0	0	0	
+couple	0	0	0	0	
+created	0	0	0	0	
+cry	0	0	0	0	
+deck	0	0	0	0	
+design	0	0	0	0	
+digital	0	0	0	0	
+dope	0	0	0	0	
+dying	0	0	0	0	
+edition	0	0	0	0	
+ending	0	0	0	0	
+enjoyable	0	0	0	0	
+enjoyed	0	0	0	0	
+enjoying	0	0	0	0	
+especially	0	0	0	0	
+excellent	0	0	0	0	
+expansion	0	0	0	0	
+expect	0	0	0	0	
+fantastic	0	0	0	0	
+fav	0	0	0	0	
+fave	0	0	0	0	
+favourite	0	0	0	0	
+feature	0	0	0	0	
+feeling	0	0	0	0	
+finish	0	0	0	0	
+follow	0	0	0	0	
+forget	0	0	0	0	
+future	0	0	0	0	
+gamers	0	0	0	0	
+giveaway	0	0	0	0	
+glad	0	0	0	0	
+grateful	0	0	0	0	
+greatest	0	0	0	0	
+hanging	0	0	0	0	
+heart	0	0	0	0	
+helped	0	0	0	0	
+hot	0	0	0	0	
+hype	0	0	0	0	
+hyped	0	0	0	0	
+impressive	0	0	0	0	
+insane	0	0	0	0	
+i’m	0	0	0	0	
+jump	0	0	0	0	
+kids	0	0	0	0	
+lie	0	0	0	0	
+listening	0	0	0	0	
+lit	0	0	0	0	
+lovely	0	0	0	0	
+loving	0	0	0	0	
+maps	0	0	0	0	
+masterpiece	0	0	0	0	
+memories	0	0	0	0	
+meta	0	0	0	0	
+moments	0	0	0	0	
+movie	0	0	0	0	
+ok	0	0	0	0	
+omg	0	0	0	0	
+opinion	0	0	0	0	
+original	0	0	0	0	
+outside	0	0	0	0	
+paint	0	0	0	0	
+plays	0	0	0	0	
+plus	0	0	0	0	
+pts	0	0	0	0	
+quarantine	0	0	0	0	
+quite	0	0	0	0	
+raid	0	0	0	0	
+recently	0	0	0	0	
+recommend	0	0	0	0	
+rest	0	0	0	0	
+reveal	0	0	0	0	
+safe	0	0	0	0	
+setting	0	0	0	0	
+short	0	0	0	0	
+smart	0	0	0	0	
+song	0	0	0	0	
+sooo	0	0	0	0	
+soundtrack	0	0	0	0	
+squad	0	0	0	0	
+stories	0	0	0	0	
+style	0	0	0	0	
+surprise	0	0	0	0	
+sweet	0	0	0	0	
+taken	0	0	0	0	
+technology	0	0	0	0	
+ton	0	0	0	0	
+trueachievements	0	0	0	0	
+truly	0	0	0	0	
+unban	0	0	0	0	
+upgrade	0	0	0	0	
+w/	0	0	0	0	
+warcraft	0	0	0	0	
+watched	0	0	0	0	
+water	0	0	0	0	
+willing	0	0	0	0	
+wins	0	0	0	0	
+wish	0	0	0	0	
+wn	0	0	0	0	
+yeah	0	0	0	0	
+18	0	0	0	0	
+2-1	0	0	0	0	
+2nd	0	0	0	0	
+3rd	0	0	0	0	
+@	0	0	0	0	
+@BlazedRTs	0	0	0	0	
+@PUBGMOBILE	0	0	0	0	
+@Twitch	0	0	0	0	
+@Xbox	0	0	0	0	
+Americans	0	0	0	0	
+Ban	0	0	0	0	
+Bro	0	0	0	0	
+DETAILS	0	0	0	0	
+Did	0	0	0	0	
+Ever	0	0	0	0	
+Everyone	0	0	0	0	
+Free	0	0	0	0	
+Funny	0	0	0	0	
+Girl	0	0	0	0	
+Halo	0	0	0	0	
+Hell	0	0	0	0	
+Lol	0	0	0	0	
+Look	0	0	0	0	
+Messi	0	0	0	0	
+Mixer	0	0	0	0	
+Modi	0	0	0	0	
+Moments	0	0	0	0	
+Most	0	0	0	0	
+Much	0	0	0	0	
+Music	0	0	0	0	
+NONE	0	0	0	0	
+Netflix	0	0	0	0	
+Next	0	0	0	0	
+Nigeria	0	0	0	0	
+OG	0	0	0	0	
+SEE	0	0	0	0	
+She	0	0	0	0	
+Shoutout	0	0	0	0	
+Someone	0	0	0	0	
+T	0	0	0	0	
+Team	0	0	0	0	
+Tell	0	0	0	0	
+Up	0	0	0	0	
+W	0	0	0	0	
+WE	0	0	0	0	
+Welcome	0	0	0	0	
+Yes	0	0	0	0	
+above	0	0	0	0	
+air	0	0	0	0	
+anyway	0	0	0	0	
+ask	0	0	0	0	
+asked	0	0	0	0	
+bed	0	0	0	0	
+behind	0	0	0	0	
+beyond	0	0	0	0	
+bf4db	0	0	0	0	
+bigger	0	0	0	0	
+blind	0	0	0	0	
+bomb	0	0	0	0	
+bringing	0	0	0	0	
+brother	0	0	0	0	
+brought	0	0	0	0	
+challenge	0	0	0	0	
+channel	0	0	0	0	
+cheating	0	0	0	0	
+child	0	0	0	0	
+clip	0	0	0	0	
+clips	0	0	0	0	
+com/player/ban/100…	0	0	0	0	
+constantly	0	0	0	0	
+cops	0	0	0	0	
+cosplay	0	0	0	0	
+couldn	0	0	0	0	
+country	0	0	0	0	
+crime	0	0	0	0	
+crying	0	0	0	0	
+cs	0	0	0	0	
+cut	0	0	0	0	
+despite	0	0	0	0	
+driving	0	0	0	0	
+esports	0	0	0	0	
+except	0	0	0	0	
+fart	0	0	0	0	
+fat	0	0	0	0	
+followers	0	0	0	0	
+fridge	0	0	0	0	
+funniest	0	0	0	0	
+gamer	0	0	0	0	
+gang	0	0	0	0	
+government	0	0	0	0	
+grand	0	0	0	0	
+hack	0	0	0	0	
+head	0	0	0	0	
+he’s	0	0	0	0	
+hilarious	0	0	0	0	
+human	0	0	0	0	
+id	0	0	0	0	
+idk	0	0	0	0	
+industry	0	0	0	0	
+involved	0	0	0	0	
+i’ve	0	0	0	0	
+kid	0	0	0	0	
+knew	0	0	0	0	
+lack	0	0	0	0	
+lately	0	0	0	0	
+laugh	0	0	0	0	
+lies	0	0	0	0	
+liked	0	0	0	0	
+lil	0	0	0	0	
+lockdown	0	0	0	0	
+media	0	0	0	0	
+mins	0	0	0	0	
+mistake	0	0	0	0	
+montage	0	0	0	0	
+nigga	0	0	0	0	
+niggas	0	0	0	0	
+occurred	0	0	0	0	
+often	0	0	0	0	
+ones	0	0	0	0	
+party	0	0	0	0	
+personal	0	0	0	0	
+pleased	0	0	0	0	
+police	0	0	0	0	
+possible	0	0	0	0	
+posts	0	0	0	0	
+ppl	0	0	0	0	
+process	0	0	0	0	
+production	0	0	0	0	
+pussy	0	0	0	0	
+r	0	0	0	0	
+random	0	0	0	0	
+realize	0	0	0	0	
+result	0	0	0	0	
+room	0	0	0	0	
+scam	0	0	0	0	
+school	0	0	0	0	
+self	0	0	0	0	
+shoot	0	0	0	0	
+shots	0	0	0	0	
+sir	0	0	0	0	
+streamer	0	0	0	0	
+streamers	0	0	0	0	
+streams	0	0	0	0	
+sub	0	0	0	0	
+talented	0	0	0	0	
+tbh	0	0	0	0	
+themselves	0	0	0	0	
+throw	0	0	0	0	
+tournament	0	0	0	0	
+tournaments	0	0	0	0	
+turned	0	0	0	0	
+vids	0	0	0	0	
+viewers	0	0	0	0	
+virus	0	0	0	0	
+voice	0	0	0	0	
+welcome	0	0	0	0	
+we’re	0	0	0	0	
+winning	0	0	0	0	
+word	0	0	0	0	
+
+
+Time taken to build model: 0.41 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.04 seconds
+
+=== Summary ===
+
+Correctly Classified Instances         599               59.9    %
+Incorrectly Classified Instances       401               40.1    %
+Kappa statistic                          0.4563
+Mean absolute error                      0.2293
+Root mean squared error                  0.3786
+Relative absolute error                 61.7453 %
+Root relative squared error             87.7486 %
+Total Number of Instances             1000     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
+                 0.714    0.195    0.571      0.714    0.634      0.487    0.852     0.721     Negative
+                 0.484    0.113    0.630      0.484    0.548      0.405    0.760     0.600     Neutral
+                 0.729    0.174    0.616      0.729    0.668      0.529    0.843     0.683     Positive
+                 0.401    0.062    0.575      0.401    0.473      0.394    0.820     0.529     Irrelevant
+Weighted Avg.    0.599    0.143    0.601      0.599    0.591      0.459    0.818     0.643     
+
+=== Confusion Matrix ===
+
+   a   b   c   d   <-- classified as
+ 190  25  37  14 |   a = Negative
+  66 138  55  26 |   b = Neutral
+  33  31 202  11 |   c = Positive
+  44  25  34  69 |   d = Irrelevant
+
