@@ -1,0 +1,279 @@
+1. python3 SVM.py  corpus/corpus_traite/training_deduplicate.csv corpus/corpus_traite/validation_clean.csv
+
+Paramètres utilisés :
+n_splits = 5
+max_iter = 50000
+C = 1.0
+class_weight = None
+gamma= scale
+vectorisation = TF-IDF
+max_features = 10000
+ngram_range = (1, 2)
+min_df=2
+
+================ MODELE LINEAIRE ================
+Accuracy moyenne : 0.5524811173622884
+F1 macro moyen : 0.5255371898777617
+
+================ MODELE RBF ================
+Accuracy moyenne : 0.5761891377064032
+F1 macro moyen : 0.5248804549550897
+
+================ TEST LINEAIRE ================
+Accuracy : 0.75
+              precision    recall  f1-score   support
+
+  Irrelevant       0.76      0.63      0.69       172
+    Negative       0.71      0.79      0.75       266
+     Neutral       0.78      0.75      0.77       285
+    Positive       0.75      0.78      0.76       277
+
+    accuracy                           0.75      1000
+   macro avg       0.75      0.74      0.74      1000
+weighted avg       0.75      0.75      0.75      1000
+
+[[108  26  14  24]
+ [ 11 211  19  25]
+ [  9  38 215  23]
+ [ 14  21  26 216]]
+
+================ TEST RBF ================
+Accuracy : 0.745
+              precision    recall  f1-score   support
+
+  Irrelevant       0.82      0.53      0.65       172
+    Negative       0.67      0.86      0.75       266
+     Neutral       0.80      0.71      0.75       285
+    Positive       0.76      0.80      0.78       277
+
+    accuracy                           0.74      1000
+   macro avg       0.76      0.73      0.73      1000
+weighted avg       0.76      0.74      0.74      1000
+
+[[ 92  38  14  28]
+ [  4 230  12  20]
+ [  8  53 202  22]
+ [  8  23  25 221]]
+
+2. python3 SVM.py  corpus/corpus_traite/training_deduplicate.csv corpus/corpus_traite/validation_clean.csv --n-split 3
+
+Paramètres utilisés :
+n_splits = 3
+max_iter = 50000
+C = 1.0
+class_weight = None
+gamma= scale
+vectorisation = TF-IDF
+max_features = 10000
+ngram_range = (1, 2)
+min_df=2
+
+================ MODELE LINEAIRE ================
+Accuracy moyenne : 0.550678585690619
+F1 macro moyen : 0.5242297439571029
+
+================ MODELE RBF ================
+Accuracy moyenne : 0.5730967281787828
+F1 macro moyen : 0.5153980986208322
+
+================ TEST LINEAIRE ================
+Accuracy : 0.75
+              precision    recall  f1-score   support
+
+  Irrelevant       0.76      0.63      0.69       172
+    Negative       0.71      0.79      0.75       266
+     Neutral       0.78      0.75      0.77       285
+    Positive       0.75      0.78      0.76       277
+
+    accuracy                           0.75      1000
+   macro avg       0.75      0.74      0.74      1000
+weighted avg       0.75      0.75      0.75      1000
+
+[[108  26  14  24]
+ [ 11 211  19  25]
+ [  9  38 215  23]
+ [ 14  21  26 216]]
+
+================ TEST RBF ================
+Accuracy : 0.745
+              precision    recall  f1-score   support
+
+  Irrelevant       0.82      0.53      0.65       172
+    Negative       0.67      0.86      0.75       266
+     Neutral       0.80      0.71      0.75       285
+    Positive       0.76      0.80      0.78       277
+
+    accuracy                           0.74      1000
+   macro avg       0.76      0.73      0.73      1000
+weighted avg       0.76      0.74      0.74      1000
+
+[[ 92  38  14  28]
+ [  4 230  12  20]
+ [  8  53 202  22]
+ [  8  23  25 221]]
+
+3. python3 SVM.py  corpus/corpus_traite/training_deduplicate.csv corpus/corpus_traite/validation_clean.csv --C 0.2
+Paramètres utilisés :
+n_splits = 5
+max_iter = 50000
+C = 0.2
+class_weight = None
+vectorisation = TF-IDF
+max_features = 10000
+ngram_range = (1, 2)
+min_df=2
+
+================ MODELE LINEAIRE ================
+Accuracy moyenne : 0.5783352072110356
+F1 macro moyen : 0.5378152539895742
+
+================ MODELE RBF ================
+Accuracy moyenne : 0.48617015547282955
+F1 macro moyen : 0.3868093174860447
+
+================ TEST LINEAIRE ================
+Accuracy : 0.704
+              precision    recall  f1-score   support
+
+  Irrelevant       0.74      0.48      0.58       172
+    Negative       0.65      0.83      0.73       266
+     Neutral       0.75      0.66      0.70       285
+    Positive       0.71      0.76      0.74       277
+
+    accuracy                           0.70      1000
+   macro avg       0.71      0.68      0.69      1000
+weighted avg       0.71      0.70      0.70      1000
+
+[[ 82  37  18  35]
+ [  6 222  17  21]
+ [ 12  54 189  30]
+ [ 11  27  28 211]]
+
+================ TEST RBF ================
+Accuracy : 0.545
+              precision    recall  f1-score   support
+
+  Irrelevant       1.00      0.03      0.06       172
+    Negative       0.44      0.92      0.60       266
+     Neutral       0.76      0.39      0.51       285
+    Positive       0.62      0.67      0.65       277
+
+    accuracy                           0.55      1000
+   macro avg       0.71      0.50      0.45      1000
+weighted avg       0.68      0.55      0.49      1000
+
+[[  5  99  15  53]
+ [  0 244   7  15]
+ [  0 131 110  44]
+ [  0  79  12 186]]
+
+4. python3 SVM.py  corpus/corpus_traite/training_deduplicate.csv corpus/corpus_traite/validation_clean.csv --C 2.0
+Paramètres utilisés :
+n_splits = 5
+max_iter = 50000
+C = 2.0
+class_weight = None
+vectorisation = TF-IDF
+max_features = 10000
+ngram_range = (1, 2)
+min_df=2
+
+================ MODELE LINEAIRE ================
+Accuracy moyenne : 0.5334115345287788
+F1 macro moyen : 0.5097631646732426
+
+================ MODELE RBF ================
+Accuracy moyenne : 0.5773052753346052
+F1 macro moyen : 0.5429457061697038
+
+================ TEST LINEAIRE ================
+Accuracy : 0.741
+              precision    recall  f1-score   support
+
+  Irrelevant       0.74      0.63      0.68       172
+    Negative       0.72      0.78      0.75       266
+     Neutral       0.75      0.76      0.76       285
+    Positive       0.75      0.75      0.75       277
+
+    accuracy                           0.74      1000
+   macro avg       0.74      0.73      0.73      1000
+weighted avg       0.74      0.74      0.74      1000
+
+[[109  23  17  23]
+ [ 13 207  23  23]
+ [  9  38 216  22]
+ [ 16  21  31 209]]
+
+================ TEST RBF ================
+Accuracy : 0.783
+              precision    recall  f1-score   support
+
+  Irrelevant       0.78      0.63      0.70       172
+    Negative       0.71      0.85      0.77       266
+     Neutral       0.84      0.76      0.80       285
+    Positive       0.82      0.83      0.82       277
+
+    accuracy                           0.78      1000
+   macro avg       0.79      0.77      0.77      1000
+weighted avg       0.79      0.78      0.78      1000
+
+[[109  30  11  22]
+ [  8 227  14  17]
+ [ 10  45 217  13]
+ [ 12  19  16 230]]
+
+5. python3 SVM.py  corpus/corpus_traite/training_deduplicate.csv corpus/corpus_traite/validation_clean.csv --class-weight balanced
+
+Paramètres utilisés :
+n_splits = 5
+max_iter = 50000
+C = 1.0
+class_weight = balanced
+vectorisation = TF-IDF
+max_features = 10000
+ngram_range = (1, 2)
+min_df=2
+
+================ MODELE LINEAIRE ================
+Accuracy moyenne : 0.5469830200121286
+F1 macro moyen : 0.5259937422418516
+
+================ MODELE RBF ================
+Accuracy moyenne : 0.5774770228657344
+F1 macro moyen : 0.5523705083199806
+
+================ TEST LINEAIRE ================
+Accuracy : 0.743
+              precision    recall  f1-score   support
+
+  Irrelevant       0.71      0.67      0.69       172
+    Negative       0.73      0.77      0.75       266
+     Neutral       0.78      0.75      0.77       285
+    Positive       0.75      0.75      0.75       277
+
+    accuracy                           0.74      1000
+   macro avg       0.74      0.74      0.74      1000
+weighted avg       0.74      0.74      0.74      1000
+
+[[115  22  15  20]
+ [ 16 204  18  28]
+ [ 11  36 215  23]
+ [ 20  19  29 209]]
+
+================ TEST RBF ================
+Accuracy : 0.76
+              precision    recall  f1-score   support
+
+  Irrelevant       0.72      0.67      0.69       172
+    Negative       0.73      0.82      0.77       266
+     Neutral       0.80      0.73      0.76       285
+    Positive       0.78      0.79      0.78       277
+
+    accuracy                           0.76      1000
+   macro avg       0.76      0.75      0.75      1000
+weighted avg       0.76      0.76      0.76      1000
+
+[[115  22  13  22]
+ [ 14 218  13  21]
+ [ 16  42 209  18]
+ [ 14  18  27 218]]

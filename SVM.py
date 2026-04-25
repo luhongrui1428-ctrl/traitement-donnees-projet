@@ -62,8 +62,9 @@ def main():
     # 2. Vectorisation TF-IDF
     vectorizer = TfidfVectorizer(
         max_features=10000,
-        ngram_range=(1, 3),
-        lowercase=True)
+        ngram_range=(1, 2),
+        lowercase=True,
+        min_df=2)
 
     X_train = vectorizer.fit_transform(textes_train)
     X_test = vectorizer.transform(textes_test)
@@ -102,7 +103,8 @@ def main():
     print("class_weight =", class_weight_value)
     print("vectorisation = TF-IDF")
     print("max_features = 10000")
-    print("ngram_range = (1, 3)")
+    print("ngram_range = (1, 2)")
+    print("min_df=2")
 
     # 6. Validation croisée - modèle linéaire
     cv_scores_linear = cross_validate(
