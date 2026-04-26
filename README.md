@@ -188,7 +188,7 @@ filters > unsupervised > attribute > StringToWordVector
 7. Dans `FilteredClassifier`, choisir le classifieur de base :
 
 ```text
-bayes > NaiveBayes
+bayes > NaiveBayesMultinomial
 ```
 
 ou, pour SVM :
