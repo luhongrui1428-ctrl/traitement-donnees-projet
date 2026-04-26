@@ -55,7 +55,7 @@ weighted avg       0.76      0.74      0.74      1000
  [  8  53 202  22]
  [  8  23  25 221]]
 
-2. python3 SVM.py  corpus/corpus_traite/training_deduplicate.csv corpus/corpus_traite/validation_clean.csv --n-split 3
+2. python3 SVM.py  corpus/corpus_traite/training_deduplicate.csv corpus/corpus_traite/validation_clean.csv --n-splits 3
 
 Paramètres utilisés :
 n_splits = 3

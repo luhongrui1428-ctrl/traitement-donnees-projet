@@ -1,23 +1,66 @@
 # Traitement statistique des données - Projet de classification de sentiments
 
-Classification de sentiments de commentaires Twitter à l’aide de plusieurs classifieurs (Naive Bayes et SVM).
+Classification de sentiments de commentaires Twitter à l’aide de plusieurs classifieurs : Naive Bayes et SVM.
 
 ---
 
 # Structure du projet
 
+L’arborescence du projet est la suivante :
+
+```text
+.
+├── corpus
+│   ├── corpus_original
+│   │   ├── twitter_training.csv
+│   │   └── twitter_validation.csv
+│   └── corpus_traite
+│       ├── training_clean.csv
+│       ├── training_deduplicate.arff
+│       ├── training_deduplicate.csv
+│       ├── validation_clean.arff
+│       └── validation_clean.csv
+├── NB.py
+├── pretraitement
+│   ├── converter_arff.py
+│   ├── csv_nettoie.py
+│   └── deduplicate.py
+├── README.md
+├── resultat_NB
+│   ├── Python
+│   │   └── resultat_NB_Python.txt
+│   └── WEKA
+│       ├── NB_CrossValidation
+│       ├── NB_SuppliedTestSet
+│       └── NB_UseTrainingSet
+├── resultat_SVM
+│   ├── Python
+│   │   └── resultat_SVM_Python.txt
+│   └── WEKA
+│       ├── SVM_CrossValidation.txt
+│       ├── SVM_SuppliedTestSet.txt
+│       └── SVM_UseTrainingSet.txt
+└── SVM.py
+```
+
+---
+
 ## 1. Corpus
 
-### Corpus_original
-- twitter_training.csv
-- twitter_validation.csv  
-Ces deux fichiers proviennent de datasets téléchargés en ligne.
+### `corpus_original`
 
-### Corpus_traite
-- training_deduplicate.csv : corpus d’entraînement utilisé pour SVM et Naive Bayes
-- validation_clean.csv : corpus de validation utilisé pour l’évaluation
-- training_deduplicate.arff : version ARFF pour WEKA (entraînement)
-- validation_clean.arff : version ARFF pour WEKA (validation)
+- `twitter_training.csv`
+- `twitter_validation.csv`
+
+Ces deux fichiers proviennent de jeux de données téléchargés en ligne.
+
+### `corpus_traite`
+
+- `training_clean.csv` : corpus d’entraînement après nettoyage du texte
+- `validation_clean.csv` : corpus de validation après nettoyage du texte
+- `training_deduplicate.csv` : corpus d’entraînement utilisé pour SVM et Naive Bayes
+- `training_deduplicate.arff` : version ARFF pour WEKA du corpus d’entraînement
+- `validation_clean.arff` : version ARFF pour WEKA du corpus de validation
 
 ---
 
@@ -25,27 +68,46 @@ Ces deux fichiers proviennent de datasets téléchargés en ligne.
 
 Ce projet inclut trois étapes principales de prétraitement :
 
-- suppression des emojis et nettoyage du texte
-- suppression des doublons entre les corpus d’entraînement et de validation
-- conversion des fichiers CSV au format ARFF pour WEKA
+- suppression des emojis et nettoyage du texte ;
+- suppression des doublons internes et prévention de la fuite de données entre le corpus d’entraînement et le corpus de validation ;
+- conversion des fichiers CSV au format ARFF pour WEKA.
 
 Toutes ces étapes sont regroupées dans les scripts suivants :
 
+```bash
+# Nettoyage du corpus d'entraînement -> sortie : training_clean.csv
+python3 pretraitement/csv_nettoie.py corpus/corpus_original/twitter_training.csv corpus/corpus_traite/training_clean.csv
+
+# Nettoyage du corpus de validation -> sortie : validation_clean.csv
+python3 pretraitement/csv_nettoie.py corpus/corpus_original/twitter_validation.csv corpus/corpus_traite/validation_clean.csv
+
+# Suppression des doublons internes et prévention de la fuite de données -> sortie : training_deduplicate.csv
+python3 pretraitement/deduplicate.py corpus/corpus_traite/training_clean.csv corpus/corpus_traite/validation_clean.csv corpus/corpus_traite/training_deduplicate.csv
+
+# Conversion du corpus d'entraînement au format ARFF pour WEKA -> sortie : training_deduplicate.arff
+python3 pretraitement/converter_arff.py corpus/corpus_traite/training_deduplicate.csv corpus/corpus_traite/training_deduplicate.arff
+
+# Conversion du corpus de validation au format ARFF pour WEKA -> sortie : validation_clean.arff
+python3 pretraitement/converter_arff.py corpus/corpus_traite/validation_clean.csv corpus/corpus_traite/validation_clean.arff
 ```
-python3 pretraitement/csv_nettoie.py corpus_original/twitter_training.csv
-python3 pretraitement/deduplicate.py corpus_original/twitter_training.csv
-python3 pretraitement/convert_arff.py corpus/corpus_traite/training_deduplicate.csv
-```
+
+---
 
 ## 3. Résultats
-- resultat_NB/ : résultats du modèle Naive Bayes (Python et WEKA)
-- resultat_SVM/ : résultats du modèle SVM (Python et WEKA)
+
+- `resultat_NB/` : résultats du modèle Naive Bayes avec Python et WEKA
+- `resultat_SVM/` : résultats du modèle SVM avec Python et WEKA
+
+---
 
 ## 4. Modèles
-- NB.py : script principal pour entraîner le modèle Naive Bayes
-- SVM.py : script principal pour entraîner le modèle SVM
 
-# 🚀 Utilisation
+- `NB.py` : script principal pour entraîner et évaluer le modèle Naive Bayes
+- `SVM.py` : script principal pour entraîner et évaluer le modèle SVM
+
+---
+
+# Utilisation
 
 ## Naive Bayes
 
@@ -53,19 +115,29 @@ Exemples de commandes :
 
 ```bash
 python3 NB.py corpus/corpus_traite/training_deduplicate.csv corpus/corpus_traite/validation_clean.csv
+
 python3 NB.py corpus/corpus_traite/training_deduplicate.csv corpus/corpus_traite/validation_clean.csv --alpha 0.5
+
 python3 NB.py corpus/corpus_traite/training_deduplicate.csv corpus/corpus_traite/validation_clean.csv --alpha 2.0
+
 python3 NB.py corpus/corpus_traite/training_deduplicate.csv corpus/corpus_traite/validation_clean.csv --class_prior "[0.25,0.25,0.25,0.25]"
+
 python3 NB.py corpus/corpus_traite/training_deduplicate.csv corpus/corpus_traite/validation_clean.csv --alpha 0.5 --class_prior "[0.25,0.25,0.25,0.25]"
 ```
 
 ## SVM
 
+Exemples de commandes :
+
 ```bash
-python3 SVM.py  corpus/corpus_traite/training_deduplicate.csv corpus/corpus_traite/validation_clean.csv
-python3 SVM.py  corpus/corpus_traite/training_deduplicate.csv corpus/corpus_traite/validation_clean.csv --n-split 3
-python3 SVM.py  corpus/corpus_traite/training_deduplicate.csv corpus/corpus_traite/validation_clean.csv --C 0.2
-python3 SVM.py  corpus/corpus_traite/training_deduplicate.csv corpus/corpus_traite/validation_clean.csv --C 2.0
-python3 SVM.py  corpus/corpus_traite/training_deduplicate.csv corpus/corpus_traite/validation_clean.csv --class-weight balanced
+python3 SVM.py corpus/corpus_traite/training_deduplicate.csv corpus/corpus_traite/validation_clean.csv
+
+python3 SVM.py corpus/corpus_traite/training_deduplicate.csv corpus/corpus_traite/validation_clean.csv --n-splits 3
+
+python3 SVM.py corpus/corpus_traite/training_deduplicate.csv corpus/corpus_traite/validation_clean.csv --C 0.2
+
+python3 SVM.py corpus/corpus_traite/training_deduplicate.csv corpus/corpus_traite/validation_clean.csv --C 2.0
+
+python3 SVM.py corpus/corpus_traite/training_deduplicate.csv corpus/corpus_traite/validation_clean.csv --class-weight balanced
 ```
 

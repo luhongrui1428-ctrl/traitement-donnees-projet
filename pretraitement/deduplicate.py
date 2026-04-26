@@ -9,6 +9,7 @@ def main():
     parser = argparse.ArgumentParser(description="Purge des doublons et prévention de fuite de données")
     parser.add_argument("train_csv", help="Fichier d'entraînement original")
     parser.add_argument("test_csv", help="Fichier de test (référence pour la fuite)")
+    parser.add_argument("output_csv", help="Fichier de sortie après dédoublonnage")
     args = parser.parse_args()
 
     # 1. Chargement des fichiers
@@ -29,16 +30,15 @@ def main():
     nb_final = len(df_train)
 
     # 4. Sauvegarde du nouveau fichier
-    output_name = "training_clean.csv"
-    df_train.to_csv(output_name, index=False, header=False)
+    df_train.to_csv(args.output_csv, index=False, header=False)
 
     # 5. Affichage des statistiques
-    print(f"--- Statistiques de nettoyage ---")
+    print("--- Statistiques de nettoyage ---")
     print(f"Nombre initial : {nb_initial}")
     print(f"Doublons internes supprimés : {nb_initial - nb_apres_interne}")
-    print(f"Messages de fuite (présents dans test) supprimés : {nb_apres_interne - nb_final}")
+    print(f"Messages de fuite supprimés : {nb_apres_interne - nb_final}")
     print(f"Nombre final de lignes : {nb_final}")
-    print(f"Fichier sauvegardé sous : {output_name}")
+    print(f"Fichier sauvegardé sous : {args.output_csv}")
 
 if __name__ == "__main__":
     main()
