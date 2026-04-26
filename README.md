@@ -109,7 +109,9 @@ python3 pretraitement/converter_arff.py corpus/corpus_traite/validation_clean.cs
 
 # Utilisation
 
-## Naive Bayes
+## Python
+
+### Naive Bayes
 
 Exemples de commandes :
 
@@ -125,7 +127,7 @@ python3 NB.py corpus/corpus_traite/training_deduplicate.csv corpus/corpus_traite
 python3 NB.py corpus/corpus_traite/training_deduplicate.csv corpus/corpus_traite/validation_clean.csv --alpha 0.5 --class_prior "[0.25,0.25,0.25,0.25]"
 ```
 
-## SVM
+### SVM
 
 Exemples de commandes :
 
@@ -141,3 +143,93 @@ python3 SVM.py corpus/corpus_traite/training_deduplicate.csv corpus/corpus_trait
 python3 SVM.py corpus/corpus_traite/training_deduplicate.csv corpus/corpus_traite/validation_clean.csv --class-weight balanced
 ```
 
+### Résultats Python
+
+Les résultats obtenus avec les scripts Python sont sauvegardés dans les dossiers suivants :
+
+```text
+resultat_NB/Python/resultat_NB_Python.txt
+resultat_SVM/Python/resultat_SVM_Python.txt
+```
+
+## WEKA
+
+Les fichiers utilisés avec WEKA sont les fichiers au format ARFF :
+
+- `corpus/corpus_traite/training_deduplicate.arff` : corpus d'entraînement
+- `corpus/corpus_traite/validation_clean.arff` : corpus de validation
+
+Les expériences avec WEKA ont été réalisées avec le méta-classifieur `FilteredClassifier`.
+Ce choix permet d'appliquer un filtre de transformation du texte avant l'entraînement du modèle.
+
+### Utilisation avec l'interface graphique de WEKA
+
+1. Ouvrir WEKA.
+2. Aller dans `Explorer`.
+3. Dans l'onglet `Preprocess`, ouvrir le fichier d'entraînement :
+
+```text
+corpus/corpus_traite/training_deduplicate.arff
+```
+
+4. Aller dans l'onglet `Classify`.
+5. Choisir le classifieur :
+
+```text
+meta > FilteredClassifier
+```
+
+6. Dans `FilteredClassifier`, choisir le filtre :
+
+```text
+filters > unsupervised > attribute > StringToWordVector
+```
+
+7. Dans `FilteredClassifier`, choisir le classifieur de base :
+
+```text
+bayes > NaiveBayes
+```
+
+ou, pour SVM :
+
+```text
+functions > SMO
+```
+
+8. Choisir le mode d'évaluation :
+
+- `Use training set` pour tester sur le corpus d'entraînement ;
+- `Cross-validation` pour faire une validation croisée ;
+- `Supplied test set` pour évaluer avec le fichier de validation :
+
+```text
+corpus/corpus_traite/validation_clean.arff
+```
+
+9. Cliquer sur `Start` pour lancer l'expérience.
+
+Les résultats obtenus avec WEKA sont sauvegardés dans les dossiers suivants :
+
+```text
+resultat_NB/WEKA/
+resultat_SVM/WEKA/
+```
+
+### Résultats WEKA
+
+Pour Naive Bayes, les résultats sont disponibles dans :
+
+```text
+resultat_NB/WEKA/NB_UseTrainingSet
+resultat_NB/WEKA/NB_CrossValidation
+resultat_NB/WEKA/NB_SuppliedTestSet
+```
+
+Pour SVM, les résultats sont disponibles dans :
+
+```text
+resultat_SVM/WEKA/SVM_UseTrainingSet.txt
+resultat_SVM/WEKA/SVM_CrossValidation.txt
+resultat_SVM/WEKA/SVM_SuppliedTestSet.txt
+```
